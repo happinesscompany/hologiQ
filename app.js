@@ -789,7 +789,7 @@
       '• Preferred Grade Group: ' + gradeVal + '\n\n' +
       'Please share available slots for a 15-minute free period.';
 
-    return 'https://wa.me/919880000000?text=' + encodeURIComponent(message);
+    return 'https://wa.me/919481369078?text=' + encodeURIComponent(message);
   }
 
   function validateBookingForm() {
