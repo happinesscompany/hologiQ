@@ -1,0 +1,2694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOLOGIQ | Embedded Brain Engineering &amp; Meta-Skills for Schools (Ages 8–19)</title>
+  <meta name="description" content="Stop rote memorisation and exam blank-outs. HOLOGIQ embeds 'Learning How to Learn' brain engineering and 6 core human skills directly into your school timetable." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       PART 2.1: GLOBAL STICKY NAVIGATION BAR & MOBILE DRAWER
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="hq-container header-inner">
+      <!-- Left: Graphic 1 — HOLOGIQ Hexagonal Neural Prism Logo -->
+      <a href="#home" class="brand-link" data-nav-target="home" aria-label="HOLOGIQ Home">
+        <svg class="brand-logo-svg" viewBox="0 0 48 48" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" role="img" aria-label="HOLOGIQ Hexagonal Neural Prism Logo">
+          <!-- Outer Hexagon (#38BDF8 on dark) -->
+          <polygon points="24,3 42.2,13.5 42.2,34.5 24,45 5.8,34.5 5.8,13.5" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round" />
+          <!-- Inner Rotated Prism (#0D9488 interlocking geometric diamond/triangle) -->
+          <polygon points="24,9 38,24 24,39 10,24" fill="rgba(13, 148, 136, 0.12)" stroke="#0D9488" stroke-width="2" stroke-linejoin="round" />
+          <polygon points="15,15 35,19 19,35" fill="none" stroke="#0D9488" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.85" />
+          <!-- Three Synaptic Vectors (Observe, Engineer, Adapt) -->
+          <line x1="24" y1="24" x2="24" y2="6" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" />
+          <line x1="24" y1="24" x2="39.5" y2="33" stroke="#0D9488" stroke-width="1.8" stroke-linecap="round" />
+          <line x1="24" y1="24" x2="8.5" y2="33" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" />
+          <!-- Outer Synaptic Terminal Nodes -->
+          <circle cx="24" cy="9" r="2.3" fill="#38BDF8" />
+          <circle cx="37" cy="31.5" r="2.3" fill="#0D9488" />
+          <circle cx="11" cy="31.5" r="2.3" fill="#38BDF8" />
+          <!-- Glowing Center Core Node (#EA580C with @keyframes corePulse) -->
+          <circle class="logo-core-pulse" cx="24" cy="24" r="7.5" fill="rgba(234, 88, 12, 0.28)" />
+          <circle class="logo-core-pulse" cx="24" cy="24" r="4.2" fill="#EA580C" stroke="#FFFFFF" stroke-width="1" />
+        </svg>
+        <div class="brand-text-wrap">
+          <div class="brand-wordmark-row">
+            <span class="brand-wordmark">HOLOGIQ</span>
+            <span class="brand-age-badge">AGES 8–19</span>
+          </div>
+          <span class="brand-sublabel">BRAIN ENGINEERING &amp; META-SKILLS • AGES 8–19</span>
+        </div>
+      </a>
+
+      <!-- Center: Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#home" class="nav-tab-link active" data-nav-target="home">Home</a>
+        <a href="#science" class="nav-tab-link" data-nav-target="science">The Science</a>
+        <a href="#programmes" class="nav-tab-link" data-nav-target="programmes">Programmes (8–19)</a>
+        <a href="#schools" class="nav-tab-link" data-nav-target="schools">For Schools</a>
+      </nav>
+
+      <!-- Right: Primary Nav CTA Button -->
+      <div class="header-cta-wrap">
+        <a href="#book-experiment" class="btn btn-spark" data-nav-target="book-experiment">
+          Book a 12-Min Classroom Test &rarr;
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Trigger (<768px) -->
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-nav-drawer" aria-label="Toggle navigation menu">
+        <svg id="hamburger-icon" viewBox="0 0 24 24" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Slide-Down Drawer -->
+    <div class="mobile-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="#home" class="mobile-nav-link active" data-nav-target="home">
+            <span>01 // Home</span>
+            <span>&rarr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="#science" class="mobile-nav-link" data-nav-target="science">
+            <span>02 // The Science ("Learning How to Learn")</span>
+            <span>&rarr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="#programmes" class="mobile-nav-link" data-nav-target="programmes">
+            <span>03 // Programmes &amp; Curriculum (Ages 8–19)</span>
+            <span>&rarr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="#schools" class="mobile-nav-link" data-nav-target="schools">
+            <span>04 // For Schools &amp; Colleges</span>
+            <span>&rarr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="#book-experiment" class="mobile-nav-link" data-nav-target="book-experiment">
+            <span>05 // Live 12-Minute Classroom Experiments</span>
+            <span>&rarr;</span>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky);">
+          BRAIN ENGINEERING &amp; META-SKILLS • GRADES 3–12 &amp; COLLEGE
+        </div>
+        <a href="#book-experiment" class="btn btn-spark" data-nav-target="book-experiment" style="width: 100%;">
+          Book a 12-Min Classroom Test &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ======================================================================
+         VIEW 1: HOME PAGE (#home)
+         ====================================================================== -->
+    <div id="view-home" class="app-view active-view" role="region" aria-label="Home View">
+
+      <!-- SECTION 1.1: HERO SECTION — THE PAIN HOOK + IMMEDIATE PRODUCT DETAILING -->
+      <section class="section-void hero-section">
+        <div class="hq-container hero-grid">
+
+          <!-- Left Column (58%): Pain Hook + 3-Pill Product Spec Strip -->
+          <div class="hero-copy-col">
+            <div class="eyebrow-badge eyebrow-badge--rose">
+              <span class="live-dot live-dot--rose"></span>
+              <span>THE SILENT CRISIS IN EVERY CLASSROOM &amp; HOME • AGES 8–19</span>
+            </div>
+
+            <h1 class="display-hero">
+              Why Do Students Study for 8 Hours, Hear a Chapter 5 Times—And Still Blank Out When Exam Questions Twist?
+            </h1>
+
+            <p class="hero-subheadline">
+              Because our education system forces kids to memorise textbook outputs without ever engineering their brains on <strong>how to learn, think, handle pressure, or speak</strong>. <strong>HOLOGIQ is India’s first Embedded Brain-Engineering &amp; Meta-Skill Programme for Schools and Colleges.</strong> In just <strong>one period a week</strong> alongside your regular academics, we install a self-upgrading learning operating system inside your students' brains—with zero extra textbooks or teacher burden.
+            </p>
+
+            <!-- Immediate Product Detailing Strip (3 Compact Architecture Pills Above CTAs) -->
+            <div class="product-spec-strip" aria-label="HOLOGIQ Product Architecture Highlights">
+              <div class="spec-pill-card">
+                <span class="spec-pill-num">PILL 01</span>
+                <p class="spec-pill-text">
+                  <strong>The Core Engine — "Learning How to Learn" Loop:</strong> (<em>Observe &rarr; Engineer &rarr; Test &rarr; Self-Fix</em>) to decode any unfamiliar task or twisted exam paper.
+                </p>
+              </div>
+              <div class="spec-pill-card">
+                <span class="spec-pill-num" style="color: #5EEAD4; background: rgba(13, 148, 136, 0.16);">PILL 02</span>
+                <p class="spec-pill-text">
+                  <strong>The Curriculum — 6 Core Human Skill Programmes + AI &amp; Finance Labs:</strong> (<em>Critical Thinking, Emotional Intelligence, Public Speaking, Career Direction, Leadership, Growth Mindset</em>).
+                </p>
+              </div>
+              <div class="spec-pill-card">
+                <span class="spec-pill-num" style="color: #FDBA74; background: rgba(234, 88, 12, 0.18);">PILL 03</span>
+                <p class="spec-pill-text">
+                  <strong>The Delivery Model — Embedded Weekly Classroom Sprints:</strong> (Grades 3–12 &amp; College) integrated directly into your school timetable.
+                </p>
+              </div>
+            </div>
+
+            <!-- Dual CTAs -->
+            <div class="hero-cta-group">
+              <a href="#book-experiment" class="btn btn-spark" data-nav-target="book-experiment">
+                Challenge Us With 8 Students (Free 12-Min Live Test) &rarr;
+              </a>
+              <a href="#programmes" class="btn btn-ghost-sky" data-nav-target="programmes">
+                Explore Our 6 Core Programmes &amp; Science
+              </a>
+            </div>
+
+            <!-- Trust Bar Micro-copy -->
+            <div class="hero-trust-bar">
+              <span class="hero-trust-item">Zero Subject Tutoring</span>
+              <span class="hero-trust-item">100% Activity &amp; Simulation Based</span>
+              <span class="hero-trust-item">Direct NEP 2020 Execution</span>
+              <span class="hero-trust-item">Measurable Cognitive Passport</span>
+            </div>
+          </div>
+
+          <!-- Right Column (42%): Graphic 2 — Core Shift + 15-Second Black-Box Brain Trap Widget -->
+          <div class="blackbox-terminal" id="blackbox-widget">
+            <div class="terminal-topbar">
+              <div class="terminal-dots" aria-hidden="true">
+                <span class="terminal-dot" style="background: #E11D48;"></span>
+                <span class="terminal-dot" style="background: #EA580C;"></span>
+                <span class="terminal-dot" style="background: #0D9488;"></span>
+              </div>
+              <span class="telemetry-eyebrow" style="color: var(--hq-brand-sky);">
+                LAB TERMINAL // 15-SEC COGNITIVE DIAGNOSTIC
+              </span>
+            </div>
+
+            <!-- Top Comparison Module: The Core Shift in Indian Education -->
+            <div class="core-shift-panel">
+              <div class="telemetry-eyebrow" style="color: #94A3B8;">THE CORE SHIFT IN INDIAN EDUCATION</div>
+              <div class="core-shift-grid">
+                <div class="shift-state-card shift-state-card--rote">
+                  <span class="shift-state-tag" style="color: #FDA4AF;">STATE A // OLD SYSTEM</span>
+                  <strong style="color: #FFFFFF;">Spoon-Fed Rote Memory:</strong> Cramming isolated facts for exams, freezing when questions twist, and forgetting everything the next week.
+                </div>
+                <div class="shift-state-card shift-state-card--hologiq">
+                  <span class="shift-state-tag" style="color: #5EEAD4;">STATE B // HOLOGIQ SYSTEM</span>
+                  <strong style="color: #FFFFFF;">Self-Sufficient Brain Architecture:</strong> Engineered to adapt to any knowledge, any future job, any environment, and any emotion on its own.
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Interactive Module: Test Your Own Brain in 15 Seconds (3 -> 6 -> 9) -->
+            <div class="blackbox-body">
+              <div class="telemetry-eyebrow" style="color: #FDBA74;">
+                WHY DO SMART STUDENTS CALL TWISTED QUESTIONS "OUT OF SYLLABUS"? TEST YOURSELF:
+              </div>
+
+              <!-- Initial Clue Display -->
+              <div class="blackbox-clue-bar" role="status">
+                <span class="telemetry-eyebrow" style="color: #5EEAD4;">SYSTEM ACCEPTS:</span>
+                <div class="clue-seq-nodes tabular-nums">
+                  <span class="seq-chip">3</span>
+                  <span>&rarr;</span>
+                  <span class="seq-chip">6</span>
+                  <span>&rarr;</span>
+                  <span class="seq-chip">9</span>
+                </div>
+                <span class="pass-badge">PASS ✓</span>
+              </div>
+
+              <p style="font-size: 0.82rem; color: #CBD5E1; margin-bottom: 0.65rem;">
+                Type any 3 numbers to test the lock, or click a quick-test pill before locking in your guess for the secret rule:
+              </p>
+
+              <!-- 3 Number Inputs + Test Button -->
+              <form id="blackbox-test-form" novalidate>
+                <div class="blackbox-input-row">
+                  <input type="number" id="bb-num-1" class="seq-input" value="12" aria-label="First sequence number" />
+                  <input type="number" id="bb-num-2" class="seq-input" value="15" aria-label="Second sequence number" />
+                  <input type="number" id="bb-num-3" class="seq-input" value="18" aria-label="Third sequence number" />
+                </div>
+                <button type="submit" class="btn btn-cobalt" style="width: 100%; min-height: 44px; font-size: 0.86rem;">
+                  Test Sequence in Black-Box &rarr;
+                </button>
+              </form>
+
+              <!-- Quick-Test Pills -->
+              <div class="quick-pills-row" aria-label="Quick sequence test pills">
+                <span class="telemetry-eyebrow" style="color: #94A3B8; font-size: 0.66rem;">QUICK TEST:</span>
+                <button type="button" class="quick-pill-btn" data-seq="12,15,18">12 &rarr; 15 &rarr; 18</button>
+                <button type="button" class="quick-pill-btn" data-seq="2,5,100">2 &rarr; 5 &rarr; 100</button>
+                <button type="button" class="quick-pill-btn" data-seq="10,5,1">10 &rarr; 5 &rarr; 1 (Boundary ✗)</button>
+              </div>
+
+              <!-- Live Sequence Test Log -->
+              <div class="test-log-box" id="blackbox-log" aria-live="polite">
+                <div class="test-log-entry">
+                  <span style="color: #94A3B8;">INITIAL CLUE: [ 3 &rarr; 6 &rarr; 9 ]</span>
+                  <span style="color: #5EEAD4; font-weight: 700;">PASS ✓</span>
+                </div>
+              </div>
+
+              <!-- Lock In My Guess: What's the Rule? -->
+              <div class="telemetry-eyebrow" style="color: #38BDF8; margin-bottom: 0.35rem;">
+                LOCK IN MY GUESS: WHAT'S THE SECRET RULE?
+              </div>
+              <div class="guess-options-grid">
+                <button type="button" class="guess-btn" data-guess="trap-a">
+                  <span>Option A: "Multiples of 3 / Adding +3"</span>
+                  <span class="telemetry-eyebrow" style="color: #94A3B8;">TEST RULE &rarr;</span>
+                </button>
+                <button type="button" class="guess-btn" data-guess="trap-b">
+                  <span>Option B: "Odd and Even Alternation"</span>
+                  <span class="telemetry-eyebrow" style="color: #94A3B8;">TEST RULE &rarr;</span>
+                </button>
+                <button type="button" class="guess-btn" data-guess="correct-c">
+                  <span>Option C: "Any 3 numbers in ascending order"</span>
+                  <span class="telemetry-eyebrow" style="color: #94A3B8;">TEST RULE &rarr;</span>
+                </button>
+                <button type="button" class="guess-btn" data-guess="reveal" style="border-color: rgba(234, 88, 12, 0.5); color: #FDBA74;">
+                  <span>⚡ Reveal the Cognitive Trap Directly</span>
+                  <span class="telemetry-eyebrow" style="color: #FDBA74;">REVEAL &rarr;</span>
+                </button>
+              </div>
+
+              <!-- Animated SVG Circuit Reveal Panel -->
+              <div class="blackbox-reveal-panel" id="blackbox-reveal" aria-live="polite">
+                <div id="blackbox-reveal-verdict" class="telemetry-eyebrow" style="color: #FDBA74; margin-bottom: 0.45rem;">
+                  DIAGNOSTIC COMPLETE // COGNITIVE TRAP EXPOSED
+                </div>
+                <!-- Inline SVG Circuit Reveal -->
+                <svg viewBox="0 0 480 120" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="margin-bottom: 0.65rem; background: #0B1120; border: 1px solid #1E293B; border-radius: 6px;">
+                  <!-- Textbook Rote Path (Trapped) -->
+                  <rect x="10" y="12" width="205" height="42" rx="5" fill="rgba(225, 29, 72, 0.14)" stroke="#E11D48" stroke-width="1.2" />
+                  <text x="18" y="30" fill="#FDA4AF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">ROTE BRAIN (95% TRAP)</text>
+                  <text x="18" y="46" fill="#F8FAFC" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Copies 3-6-9 &rarr; Assumes +3</text>
+
+                  <!-- HOLOGIQ Boundary Testing Path -->
+                  <rect x="10" y="64" width="205" height="42" rx="5" fill="rgba(13, 148, 136, 0.16)" stroke="#0D9488" stroke-width="1.2" />
+                  <text x="18" y="82" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">HOLOGIQ ENGINEERED</text>
+                  <text x="18" y="98" fill="#F8FAFC" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Tests FAIL (✗) &amp; 1&rarr;2&rarr;100</text>
+
+                  <!-- Animated Circuit Connectors -->
+                  <path d="M215 33 L255 33" stroke="#E11D48" stroke-width="2" stroke-dasharray="4 3" />
+                  <path class="svg-dash-flow" d="M215 85 L255 85" stroke="#14B8A6" stroke-width="2.2" />
+
+                  <!-- True Rule Node -->
+                  <rect x="255" y="14" width="215" height="92" rx="6" fill="rgba(29, 78, 216, 0.2)" stroke="#38BDF8" stroke-width="1.5" />
+                  <text x="267" y="35" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">REAL RULE UNLOCKED:</text>
+                  <text x="267" y="55" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">Any 3 Numbers</text>
+                  <text x="267" y="73" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">Going Up in Size!</text>
+                  <text x="267" y="94" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11">[ 1 &rarr; 2 &rarr; 100 = PASS ✓ ]</text>
+                </svg>
+
+                <p style="font-size: 0.82rem; line-height: 1.5; color: #E2E8F0;">
+                  <strong style="color: #FDBA74;">95% of Adults &amp; Students Get Trapped Here!</strong> The sequence <code style="color: #5EEAD4;">1 &rarr; 2 &rarr; 100</code> also unlocks the system! The real rule is simply <strong>"Any 3 numbers going up in size."</strong> Because school textbooks train brains to <em>copy the first example they see</em> instead of testing boundaries (<code style="color: #FDA4AF;">FAIL ✗</code>), students get trapped inside "Multiples of 3". In 12 minutes, HOLOGIQ rewires this reflex permanently.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 1.2: THE REAL DAILY PROBLEM & "HARDWARE BEFORE SOFTWARE" -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              01 // THE REAL PROBLEM TEACHERS &amp; PARENTS FACE DAILY
+            </div>
+            <h2 class="section-header">Why Teaching and Parenting Feel So Exhausting Today</h2>
+            <p class="lead-copy" style="margin-top: 0.75rem;">
+              Schools spend 100% of their day installing heavier academic "software" (Physics, Chemistry, Math, History) onto a student's brain whose underlying "Operating System" was never taught how to process information, regulate stress, or question assumptions.
+            </p>
+          </div>
+
+          <div class="hw-sw-grid">
+            <!-- Left Column: Graphic 3 — "Hardware vs. Software" Split Architectural Schematic -->
+            <div class="hq-card-light" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.5rem;">
+                  ARCHITECTURAL DIAGNOSTIC // HARDWARE BEFORE SOFTWARE
+                </div>
+                <h3 class="module-header" style="margin-bottom: 1rem;">
+                  Why Loading Heavier Syllabus Chapters Onto an Un-Engineered Brain Triggers Overload
+                </h3>
+              </div>
+
+              <!-- Graphic 3: Split Before/After Architectural SVG Schematic -->
+              <div class="schematic-split-grid">
+                <!-- Left Card: Traditional Rote Approach (Software Only) -->
+                <div style="background: #FFF1F2; border: 1px solid #FECDD3; border-radius: 10px; padding: 1rem;">
+                  <div class="telemetry-eyebrow" style="color: var(--hq-state-rote-alert); margin-bottom: 0.35rem;">
+                    WHAT SCHOOLS SPEND 100% TIME ON
+                  </div>
+                  <div style="font-family: var(--hq-font-display); font-weight: 700; font-size: 0.98rem; color: var(--hq-text-primary); margin-bottom: 0.4rem;">
+                    Loading Heavy Lessons &amp; Exam Notes (Software Only)
+                  </div>
+                  <p style="font-size: 0.84rem; color: var(--hq-text-body); margin-bottom: 0.75rem;">
+                    Pushing heavier syllabus chapters onto students who only know how to copy and memorise.
+                  </p>
+                  <svg viewBox="0 0 340 220" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Traditional Rote Approach Overload Schematic">
+                    <!-- Heavy Textbook Blocks -->
+                    <rect x="16" y="12" width="96" height="34" rx="4" fill="#64748B" />
+                    <text x="64" y="33" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">PHYSICS</text>
+
+                    <rect x="122" y="12" width="96" height="34" rx="4" fill="#64748B" />
+                    <text x="170" y="33" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">MATH</text>
+
+                    <rect x="228" y="12" width="96" height="34" rx="4" fill="#64748B" />
+                    <text x="276" y="33" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">HISTORY</text>
+
+                    <!-- Downward Bottleneck Funnel -->
+                    <path d="M64 46 L170 84 M170 46 L170 84 M276 46 L170 84" stroke="#64748B" stroke-width="2" />
+
+                    <!-- Fragile Dotted Rote Thread -->
+                    <line x1="170" y1="84" x2="170" y2="152" stroke="#E11D48" stroke-width="2.5" stroke-dasharray="4 4" />
+
+                    <!-- Out-of-Syllabus Twist Lightning Strike -->
+                    <polygon points="184,92 158,116 174,116 154,142 192,112 174,112" fill="#E11D48" />
+                    <rect x="194" y="102" width="134" height="26" rx="4" fill="#E11D48" />
+                    <text x="261" y="119" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">TWISTED PAPER ⚡</text>
+
+                    <!-- Snapped Output Box -->
+                    <rect x="16" y="156" width="308" height="50" rx="6" fill="#FFFFFF" stroke="#E11D48" stroke-width="2" />
+                    <text x="170" y="177" text-anchor="middle" fill="#E11D48" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">✗ SYSTEM SNAP: EXAM BLANK-OUT</text>
+                    <text x="170" y="195" text-anchor="middle" fill="#64748B" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Fragile rote line breaks under pressure</text>
+                  </svg>
+                </div>
+
+                <!-- Right Card: The HOLOGIQ Approach (Upgrading the Hardware) -->
+                <div style="background: #F0FDFA; border: 1px solid #99F6E4; border-radius: 10px; padding: 1rem;">
+                  <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">
+                    WHAT WAS NEVER TAUGHT (THE MISSING FOUNDATION)
+                  </div>
+                  <div style="font-family: var(--hq-font-display); font-weight: 700; font-size: 0.98rem; color: var(--hq-text-primary); margin-bottom: 0.4rem;">
+                    How to Learn, Think, Speak &amp; Handle Pressure (Upgrading Hardware)
+                  </div>
+                  <p style="font-size: 0.84rem; color: var(--hq-text-body); margin-bottom: 0.75rem;">
+                    Upgrading the child's mind first so they can grasp any skill or lesson on their own.
+                  </p>
+                  <svg viewBox="0 0 340 220" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" role="img" aria-label="HOLOGIQ Brain Operating System Hardware Upgrade Schematic">
+                    <defs>
+                      <linearGradient id="hqHwGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#1D4ED8" />
+                        <stop offset="100%" stop-color="#0D9488" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Incoming Any Subject / Unseen Problem Inputs -->
+                    <rect x="14" y="10" width="98" height="30" rx="4" fill="#1D4ED8" />
+                    <text x="63" y="29" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">ANY SUBJECT</text>
+
+                    <rect x="121" y="10" width="98" height="30" rx="4" fill="#1D4ED8" />
+                    <text x="170" y="29" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">EXAM TWIST</text>
+
+                    <rect x="228" y="10" width="98" height="30" rx="4" fill="#1D4ED8" />
+                    <text x="277" y="29" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">NEW AI SKILL</text>
+
+                    <!-- Animated Feed Lines -->
+                    <path class="svg-dash-flow" d="M63 40 L142 70 M170 40 L170 62 M277 40 L198 70" stroke="#1D4ED8" stroke-width="2" />
+
+                    <!-- Hexagonal Brain Operating System Core -->
+                    <polygon points="170,55 228,78 228,122 170,145 112,122 112,78" fill="url(#hqHwGrad)" stroke="#0F172A" stroke-width="1.5" />
+                    <text x="170" y="96" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700">HOLOGIQ OS</text>
+                    <text x="170" y="114" text-anchor="middle" fill="#CCFBF1" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">OBSERVE &rarr; FIX</text>
+
+                    <!-- Effortless Output -->
+                    <line x1="170" y1="145" x2="170" y2="156" stroke="#0D9488" stroke-width="3" />
+                    <rect x="16" y="156" width="308" height="50" rx="6" fill="#FFFFFF" stroke="#0D9488" stroke-width="2" />
+                    <text x="170" y="177" text-anchor="middle" fill="#0D9488" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">✓ 2X ABSORPTION &amp; 92%+ RECALL</text>
+                    <text x="170" y="195" text-anchor="middle" fill="#334155" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Self-sufficient brain processes any task</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: The 3 Daily Breakdown Cards -->
+            <div class="daily-frustration-stack">
+              <div class="frustration-card frustration-card--rose">
+                <div class="telemetry-eyebrow" style="color: var(--hq-state-rote-alert); margin-bottom: 0.35rem;">
+                  BREAKDOWN 01 // CLASSROOM FRICTION
+                </div>
+                <h3 class="module-header" style="margin-bottom: 0.45rem;">
+                  The Teacher’s 2:30 PM Frustration
+                </h3>
+                <p style="font-size: 0.94rem;">
+                  Teachers repeat the exact same chapter 5 times because students are distracted, passive, and waiting to be spoon-fed every single answer.
+                </p>
+              </div>
+
+              <div class="frustration-card frustration-card--cobalt">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.35rem;">
+                  BREAKDOWN 02 // EVENING HOMEWORK WARZONE
+                </div>
+                <h3 class="module-header" style="margin-bottom: 0.45rem;">
+                  The Parent’s 8:00 PM Heartbreak
+                </h3>
+                <p style="font-size: 0.94rem;">
+                  Children sit with open books for hours at home, yet freeze during exams—and struggle to speak confidently in front of others.
+                </p>
+              </div>
+
+              <div class="frustration-card frustration-card--teal">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">
+                  BREAKDOWN 03 // META-SKILL EROSION
+                </div>
+                <h3 class="module-header" style="margin-bottom: 0.45rem;">
+                  The Loss of Real Human Skills
+                </h3>
+                <p style="font-size: 0.94rem;">
+                  In chasing rote marks, kids are losing real human capabilities: problem-solving, critical thinking, public speaking, and emotional resilience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Split Banner: Why Memorising Facts Can No Longer Save Our Kids (From Brochure Slide 3) -->
+          <div class="inventor-banner">
+            <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.45rem;">
+              THE SMARTPHONE ANALOGY &amp; FIRST INVENTOR PARADOX
+            </div>
+            <h3 class="section-header" style="color: #FFFFFF; margin-bottom: 0.65rem;">
+              Why Memorising Facts Can No Longer Save Our Kids
+            </h3>
+            <p style="color: #CBD5E1; max-width: 920px; font-size: 0.98rem;">
+              Think about your own life: 20 years ago, you knew 30 phone numbers and road routes by heart. The day smartphones and Maps arrived, memorising digits became useless overnight. Today, AI can generate any textbook answer in 2 seconds.
+            </p>
+
+            <div class="inventor-split">
+              <!-- Left Split: The Trap -->
+              <div class="inventor-col inventor-col--trap">
+                <div class="telemetry-eyebrow" style="color: #FDA4AF;">
+                  THE TRAP // WHY INDIA LACKS A RESEARCH MINDSET
+                </div>
+                <ul class="inventor-list">
+                  <li>
+                    <strong style="color: #FFFFFF;">Competing With AI:</strong> Why force a child to spend 12 years memorising facts that AI generates instantly?
+                  </li>
+                  <li>
+                    <strong style="color: #FFFFFF;">Copying Instead of Creating:</strong> Students memorise theories someone else discovered, without knowing how to discover anything new.
+                  </li>
+                  <li>
+                    <strong style="color: #FFFFFF;">Helpless When Life Changes:</strong> The moment a problem isn't from the textbook, rote learners feel lost.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Right Split: The Truth -->
+              <div class="inventor-col inventor-col--truth">
+                <div class="telemetry-eyebrow" style="color: #5EEAD4;">
+                  THE TRUTH // HOW DID THE FIRST INVENTOR LEARN?
+                </div>
+                <ul class="inventor-list">
+                  <li>
+                    <strong style="color: #FFFFFF;">No Textbook Existed:</strong> When Ramanujan, Einstein, or Edison created a breakthrough for the first time, which textbook did they memorise it from? None—they observed, questioned, and practised.
+                  </li>
+                  <li>
+                    <strong style="color: #FFFFFF;">Original Meaning of Education:</strong> Real education began by sharing practical human skill insights, not cramming pages.
+                  </li>
+                  <li>
+                    <strong style="color: #FFFFFF;">Mastering the Ultimate Skill:</strong> Training the brain’s metacognition to observe, question, and build what machines cannot.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 1.3: INSIDE THE HOLOGIQ PRODUCT ENGINE (3-PILLAR DELIVERY BLUEPRINT) -->
+      <section class="section-surface section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              02 // PRODUCT ARCHITECTURE • ZERO EXTRA SYLLABUS BURDEN
+            </div>
+            <h2 class="section-header">What Exactly Does HOLOGIQ Deliver Inside Your Campus?</h2>
+            <p class="lead-copy" style="margin-top: 0.75rem;">
+              We are not a tuition app, an ERP software, or a one-day motivational seminar. HOLOGIQ works as a <strong>continuous, year-round embedded skill partner</strong> alongside your existing academics:
+            </p>
+          </div>
+
+          <div class="blueprint-3col">
+            <!-- Blueprint Card 1 -->
+            <article class="hq-card-light card-top-cobalt">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.5rem;">
+                DELIVERY FORMAT • GRADES 3 TO 12 &amp; COLLEGE
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.65rem;">
+                Weekly 45-Minute Cognitive Sprints (In Your Timetable)
+              </h3>
+              <p style="font-size: 0.94rem;">
+                Takes just 1 period per week inside your regular school timetable. Zero textbooks, zero rote homework, and zero preparation burden on your teachers. Every session follows our 4-stage experiential cycle: <strong>Understand &rarr; Explore &rarr; Practise &rarr; Reflect</strong>.
+              </p>
+            </article>
+
+            <!-- Blueprint Card 2 -->
+            <article class="hq-card-light card-top-teal">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.5rem;">
+                THE CORE COGNITIVE OPERATING SYSTEM
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.65rem;">
+                The "Learning How to Learn" Brain Engineering Loop
+              </h3>
+              <p style="font-size: 0.94rem;">
+                Through timed simulations and live feedback loops, we rewire students to run our 4-step protocol (<strong>Observe &rarr; Engineer &rarr; Test &rarr; Self-Fix</strong>) whenever they face a tough academic chapter, an unseen exam question, or a stage speech.
+              </p>
+            </article>
+
+            <!-- Blueprint Card 3 -->
+            <article class="hq-card-light card-top-spark">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark); margin-bottom: 0.5rem;">
+                TANGIBLE OUTCOMES FOR PARENTS &amp; PRINCIPALS
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.65rem;">
+                Measurable Proof (Cognitive Passport + Parent Arena)
+              </h3>
+              <p style="font-size: 0.94rem;">
+                Every semester, parents receive the <strong>HOLOGIQ Cognitive Passport</strong> tracking 4 core readiness metrics—culminating in the <strong>Live Parent Arena</strong>, where students solve unseen problems live on stage during PTMs and Open Houses.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 1.4: INSTANT DAILY RELIEF — THE 4-STAKEHOLDER SWITCHER -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--teal">
+              03 // THE "PARACETAMOL" EFFECT — IMMEDIATE FRICTION RELIEF
+            </div>
+            <h2 class="section-header">How One HOLOGIQ Period a Week Transforms Daily Life at School &amp; Home</h2>
+          </div>
+
+          <!-- Accessible 4-Stakeholder Tab Buttons -->
+          <div class="stakeholder-tabs-bar" role="tablist" aria-label="Stakeholder Impact Tabs">
+            <button type="button" class="stakeholder-tab-btn active" role="tab" aria-selected="true" aria-controls="panel-principals" id="tab-principals" data-stakeholder="principals">
+              <span>01. For Principals &amp; Trustees</span>
+              <span>&rarr;</span>
+            </button>
+            <button type="button" class="stakeholder-tab-btn" role="tab" aria-selected="false" aria-controls="panel-teachers" id="tab-teachers" data-stakeholder="teachers">
+              <span>02. For Subject Teachers</span>
+              <span>&rarr;</span>
+            </button>
+            <button type="button" class="stakeholder-tab-btn" role="tab" aria-selected="false" aria-controls="panel-parents" id="tab-parents" data-stakeholder="parents">
+              <span>03. For Parents</span>
+              <span>&rarr;</span>
+            </button>
+            <button type="button" class="stakeholder-tab-btn" role="tab" aria-selected="false" aria-controls="panel-students" id="tab-students" data-stakeholder="students">
+              <span>04. For Students (Ages 8–19)</span>
+              <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Tab 1: Principals & Trustees -->
+          <div class="stakeholder-panel active" id="panel-principals" role="tabpanel" aria-labelledby="tab-principals">
+            <div>
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.45rem;">
+                SOLVING ADMISSIONS DIFFERENTIATION, EXAM AVERAGES &amp; NEP 2020 EXECUTION
+              </div>
+              <h3 class="section-header" style="margin-bottom: 0.85rem;">
+                Raise Board Exam Averages &amp; Become Your City’s Most Sought-After Campus
+              </h3>
+              <p style="font-size: 1rem;">
+                Parents today know rote memorisation is dead in the AI era, which is why they question annual fee revisions and get tempted by flashy international schools. Partnering with HOLOGIQ turns your institution into an official <strong>Brain-Engineered Campus</strong>: your students grasp their regular syllabus faster, stop freezing on twisted board exam papers, and dazzle visiting parents during Admissions Open House.
+              </p>
+              <div class="stakeholder-metrics-row">
+                <span class="stakeholder-metric-pill">✓ 1 Period / Week Integration</span>
+                <span class="stakeholder-metric-pill">✓ Zero Faculty Workload</span>
+                <span class="stakeholder-metric-pill">✓ Live Parent Arena Admissions Magnet</span>
+              </div>
+            </div>
+            <div>
+              <svg viewBox="0 0 420 220" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="background: #090D16; border-radius: 12px; border: 1px solid #1E293B;">
+                <text x="20" y="28" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">CAMPUS PRESTIGE &amp; BOARD EXAM TELEMETRY</text>
+                <rect x="20" y="45" width="380" height="46" rx="6" fill="#111827" stroke="#1E293B" />
+                <text x="32" y="64" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="11">TWISTED BOARD PAPER RESILIENCE</text>
+                <rect x="32" y="74" width="265" height="8" rx="4" fill="#0D9488" />
+                <text x="315" y="81" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">+68% AVG</text>
+
+                <rect x="20" y="102" width="380" height="46" rx="6" fill="#111827" stroke="#1E293B" />
+                <text x="32" y="121" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="11">OPEN HOUSE PARENT CONVERSION</text>
+                <rect x="32" y="131" width="305" height="8" rx="4" fill="#1D4ED8" />
+                <text x="350" y="138" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">94%</text>
+
+                <rect x="20" y="160" width="380" height="42" rx="6" fill="rgba(234, 88, 12, 0.14)" stroke="#EA580C" />
+                <text x="210" y="185" text-anchor="middle" fill="#FDBA74" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">OFFICIAL NEP 2020 EXECUTION ENGINE</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Tab 2: Subject Teachers -->
+          <div class="stakeholder-panel" id="panel-teachers" role="tabpanel" aria-labelledby="tab-teachers">
+            <div>
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.45rem;">
+                ENDING 2:30 PM VOCAL-CORD BURNOUT &amp; PASSIVE CLASSROOMS
+              </div>
+              <h3 class="section-header" style="margin-bottom: 0.85rem;">
+                Stop Repeating the Same Chapter Five Times to Blank, Distracted Faces
+              </h3>
+              <p style="font-size: 1rem;">
+                Your teachers are already giving 100% effort. The bottleneck isn't how they teach—it’s that passive screen habits have damaged students' attention and absorption. HOLOGIQ acts as your teachers' <strong>Absorption Catalyst</strong>: we rewire student observation, active listening, and task-engineering so when a teacher explains a tough concept once, the classroom grasps it on the first explanation.
+              </p>
+              <div class="stakeholder-metrics-row">
+                <span class="stakeholder-metric-pill">✓ 2x Faster Chapter Absorption</span>
+                <span class="stakeholder-metric-pill">✓ Curious, Self-Correcting Students</span>
+                <span class="stakeholder-metric-pill">✓ 40% Less Pre-Exam Re-Teaching</span>
+              </div>
+            </div>
+            <div>
+              <svg viewBox="0 0 420 220" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="background: #090D16; border-radius: 12px; border: 1px solid #1E293B;">
+                <text x="20" y="28" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">TEACHER ABSORPTION CATALYST INDEX</text>
+                <rect x="20" y="46" width="180" height="78" rx="6" fill="rgba(225, 29, 72, 0.1)" stroke="#E11D48" />
+                <text x="110" y="68" text-anchor="middle" fill="#FDA4AF" font-family="JetBrains Mono, monospace" font-size="11">BEFORE HOLOGIQ</text>
+                <text x="110" y="92" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">5x Repeats</text>
+                <text x="110" y="112" text-anchor="middle" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-size="11">High vocal burnout</text>
+
+                <rect x="220" y="46" width="180" height="78" rx="6" fill="rgba(13, 148, 136, 0.16)" stroke="#0D9488" />
+                <text x="310" y="68" text-anchor="middle" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11">WITH HOLOGIQ</text>
+                <text x="310" y="92" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">1st Explain</text>
+                <text x="310" y="112" text-anchor="middle" fill="#CCFBF1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">2x faster absorption</text>
+
+                <rect x="20" y="138" width="380" height="62" rx="6" fill="#111827" stroke="#1E293B" />
+                <text x="210" y="164" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">Zero Grading or Prep Burden on Faculty</text>
+                <text x="210" y="185" text-anchor="middle" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11">40% CLASS TIME SAVED BEFORE EXAMS</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Tab 3: Parents -->
+          <div class="stakeholder-panel" id="panel-parents" role="tabpanel" aria-labelledby="tab-parents">
+            <div>
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark); margin-bottom: 0.45rem;">
+                ENDING THE EXHAUSTING 8:00 PM HOMEWORK &amp; SCREEN WARZONE
+              </div>
+              <h3 class="section-header" style="margin-bottom: 0.85rem;">
+                Bring Peace Back to Your Evening While Your Child Studies in Half the Time
+              </h3>
+              <p style="font-size: 1rem;">
+                Nothing is more exhausting than sitting beside your child at 8 PM while they stare at an open book for three hours, absorb almost nothing, and blank out in the exam hall. When we engineer your child’s brain on <em>how to tackle any task</em>, study panic disappears, homework finishes in half the time, and your child develops fearless stage and life confidence.
+              </p>
+              <div class="stakeholder-metrics-row">
+                <span class="stakeholder-metric-pill">✓ Effortless Exam Recall</span>
+                <span class="stakeholder-metric-pill">✓ 5-Second Exam Panic Reset</span>
+                <span class="stakeholder-metric-pill">✓ Unscripted Stage &amp; Social Confidence</span>
+              </div>
+            </div>
+            <div>
+              <svg viewBox="0 0 420 220" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="background: #090D16; border-radius: 12px; border: 1px solid #1E293B;">
+                <text x="20" y="28" fill="#FDBA74" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">8:00 PM HOME STUDY TRANSFORMATION</text>
+                <rect x="20" y="45" width="380" height="60" rx="6" fill="rgba(225, 29, 72, 0.1)" stroke="#E11D48" />
+                <text x="32" y="68" fill="#FDA4AF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">OLD: 3 HRS PASSIVE BOOK STARING</text>
+                <text x="32" y="90" fill="#E2E8F0" font-family="Plus Jakarta Sans, sans-serif" font-size="11">High parental stress &rarr; Exam hall blank-out</text>
+
+                <rect x="20" y="118" width="380" height="80" rx="6" fill="rgba(13, 148, 136, 0.15)" stroke="#0D9488" />
+                <text x="32" y="142" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">NEW: 45 MIN SELF-DRIVEN TASK ENGINEERING</text>
+                <text x="32" y="164" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Independent study + 5-sec panic reset + stage poise</text>
+                <text x="32" y="184" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11">SEMESTER COGNITIVE PASSPORT INCLUDED</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Tab 4: Students (Ages 8–19) -->
+          <div class="stakeholder-panel" id="panel-students" role="tabpanel" aria-labelledby="tab-students">
+            <div>
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.45rem;">
+                ZERO BORING LECTURES • PURE SECRET-LAB SIMULATION
+              </div>
+              <h3 class="section-header" style="margin-bottom: 0.85rem;">
+                Stop Memorising Like a Machine. Engineer Your Brain Like an Inventor.
+              </h3>
+              <p style="font-size: 1rem;">
+                No extra textbooks, no grammar policing, and no boring theory lectures. Step into high-energy team simulations, crack mutating "Black-Box" puzzles, master the 3-finger unscripted speaking reflex, and build a brain that can decode any tough subject, crush stage fear, and stay ahead of AI.
+              </p>
+              <div class="stakeholder-metrics-row">
+                <span class="stakeholder-metric-pill">✓ Crack Unseen Problems</span>
+                <span class="stakeholder-metric-pill">✓ Speak Without Memorised Scripts</span>
+                <span class="stakeholder-metric-pill">✓ Study in Half the Time</span>
+              </div>
+            </div>
+            <div>
+              <svg viewBox="0 0 420 220" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="background: #090D16; border-radius: 12px; border: 1px solid #1E293B;">
+                <text x="20" y="28" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">STUDENT COGNITIVE ARENA // AGES 8–19</text>
+                <polygon points="90,56 138,82 138,132 90,158 42,132 42,82" fill="rgba(29, 78, 216, 0.22)" stroke="#38BDF8" stroke-width="1.8" />
+                <text x="90" y="102" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">DECODE</text>
+                <text x="90" y="120" text-anchor="middle" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11">BLACK-BOX</text>
+
+                <polygon points="210,56 258,82 258,132 210,158 162,132 162,82" fill="rgba(234, 88, 12, 0.2)" stroke="#EA580C" stroke-width="1.8" />
+                <text x="210" y="102" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">3-FINGER</text>
+                <text x="210" y="120" text-anchor="middle" fill="#FDBA74" font-family="JetBrains Mono, monospace" font-size="11">SPEAKING</text>
+
+                <polygon points="330,56 378,82 378,132 330,158 282,132 282,82" fill="rgba(13, 148, 136, 0.22)" stroke="#0D9488" stroke-width="1.8" />
+                <text x="330" y="102" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">5-SECOND</text>
+                <text x="330" y="120" text-anchor="middle" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11">CALM RESET</text>
+
+                <text x="210" y="192" text-anchor="middle" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="11">100% SIMULATION • ZERO TEXTBOOK ROTE</text>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 1.5: THE 6 CORE HUMAN PILLARS + 2 MODERN LABS (BENTO GRID PREVIEW + GRAPHIC 6) -->
+      <section class="section-void section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--dark">
+              04 // OUR CORE TRAINING PROGRAMMES (AGES 8–19)
+            </div>
+            <h2 class="section-header" style="color: #FFFFFF;">Six Core Human Capabilities AI Will Never Replace</h2>
+            <p class="lead-copy" style="color: #CBD5E1; margin-top: 0.75rem;">
+              <em>Educate the Mind. Empower the Individual. Prepare for the Future.</em> Through continuous, activity-based workshops, we activate the essential human skills students need to thrive in school and life:
+            </p>
+          </div>
+
+          <!-- Graphic 6: 6 Core Pillars Bento Grid with Strict 3-Color Semantic Governance -->
+          <div class="bento-6grid">
+
+            <!-- Pillar 01: Critical Thinking (#1D4ED8 Synapse Blue) -->
+            <article class="pillar-card-dark pillar-card-dark--cobalt">
+              <div>
+                <div class="pillar-icon-box pillar-icon-box--cobalt">
+                  <!-- Graphic 6.1: Interlocking Logic Prism SVG (#1D4ED8 / #38BDF8) -->
+                  <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                    <polygon points="16,3 29,11 29,23 16,30 3,23 3,11" stroke="#38BDF8" stroke-width="2" />
+                    <polygon points="16,8 24,21 8,21" stroke="#1D4ED8" fill="rgba(56,189,248,0.2)" stroke-width="2" />
+                    <circle cx="16" cy="17" r="2.5" fill="#38BDF8" />
+                  </svg>
+                </div>
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.35rem;">
+                  01 / COGNITIVE &amp; ANALYTICAL PILLAR
+                </div>
+                <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                  Critical Thinking &amp; Problem-Solving
+                </h3>
+                <p style="font-size: 0.88rem; color: #93C5FD; font-style: italic; margin-bottom: 0.5rem;">
+                  Don’t Just Find Answers. Learn to Question Them.
+                </p>
+                <p style="font-size: 0.9rem; color: #CBD5E1;">
+                  Evaluate evidence, spot cognitive biases, and solve unfamiliar problems with logic and creativity.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 02: Emotional Intelligence (#0D9488 Neuro-Teal) -->
+            <article class="pillar-card-dark pillar-card-dark--teal">
+              <div>
+                <div class="pillar-icon-box pillar-icon-box--teal">
+                  <!-- Graphic 6.2: Harmonic Equilibrium Wave SVG (#0D9488) -->
+                  <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                    <circle cx="16" cy="16" r="12" stroke="#14B8A6" stroke-width="1.8" stroke-dasharray="4 2" />
+                    <path d="M4 16 C9 8, 13 8, 16 16 C19 24, 23 24, 28 16" stroke="#5EEAD4" stroke-width="2.4" stroke-linecap="round" />
+                    <circle cx="16" cy="16" r="2.8" fill="#0D9488" stroke="#5EEAD4" stroke-width="1.2" />
+                  </svg>
+                </div>
+                <div class="telemetry-eyebrow" style="color: #5EEAD4; margin-bottom: 0.35rem;">
+                  02 / HUMAN &amp; EMOTIONAL PILLAR
+                </div>
+                <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                  Emotional Intelligence &amp; Self-Correction
+                </h3>
+                <p style="font-size: 0.88rem; color: #5EEAD4; font-style: italic; margin-bottom: 0.5rem;">
+                  Understand Yourself. Connect with Others. Lead with Empathy.
+                </p>
+                <p style="font-size: 0.9rem; color: #CBD5E1;">
+                  Regulate exam stress in seconds, bounce back from setbacks, and build a self-fixing mind.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 03: Communication & Public Speaking (#EA580C Ignition Amber) -->
+            <article class="pillar-card-dark pillar-card-dark--spark">
+              <div>
+                <div class="pillar-icon-box pillar-icon-box--spark">
+                  <!-- Graphic 6.3: Radiating Acoustic Projection Vector SVG (#EA580C) -->
+                  <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                    <circle cx="9" cy="16" r="3.5" fill="#EA580C" />
+                    <path d="M15 11 C18 13.5, 18 18.5, 15 21" stroke="#FDBA74" stroke-width="2.2" stroke-linecap="round" />
+                    <path d="M19.5 7.5 C24 12, 24 20, 19.5 24.5" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" />
+                    <path d="M24 4 C30 10.5, 30 21.5, 24 28" stroke="#FDBA74" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="telemetry-eyebrow" style="color: #FDBA74; margin-bottom: 0.35rem;">
+                  03 / EXPRESSIVE &amp; ACTION PILLAR
+                </div>
+                <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                  Communication &amp; Public Speaking
+                </h3>
+                <p style="font-size: 0.88rem; color: #FDBA74; font-style: italic; margin-bottom: 0.5rem;">
+                  Your Ideas Deserve to Be Heard.
+                </p>
+                <p style="font-size: 0.9rem; color: #CBD5E1;">
+                  Overcome stage fear, organise thoughts without memorised scripts, and speak with clarity and persuasion.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 04: Career Guidance & Future Readiness (#1D4ED8 Synapse Blue) -->
+            <article class="pillar-card-dark pillar-card-dark--cobalt">
+              <div>
+                <div class="pillar-icon-box pillar-icon-box--cobalt">
+                  <!-- Graphic 6.4: Vector Compass / Pathway SVG (#1D4ED8 / #38BDF8) -->
+                  <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                    <circle cx="16" cy="16" r="12" stroke="#38BDF8" stroke-width="2" />
+                    <polygon points="16,6 20,16 16,26 12,16" fill="rgba(56,189,248,0.22)" stroke="#38BDF8" stroke-width="1.8" />
+                    <circle cx="16" cy="16" r="2.2" fill="#FFFFFF" />
+                  </svg>
+                </div>
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.35rem;">
+                  04 / COGNITIVE &amp; ANALYTICAL PILLAR
+                </div>
+                <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                  Career Guidance &amp; Future Readiness
+                </h3>
+                <p style="font-size: 0.88rem; color: #93C5FD; font-style: italic; margin-bottom: 0.5rem;">
+                  Don’t Choose a Career by Default. Choose It with Direction.
+                </p>
+                <p style="font-size: 0.9rem; color: #CBD5E1;">
+                  Audit natural strengths, explore emerging AI-era roles, and plan with clarity.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 05: Leadership & Teamwork (#EA580C Ignition Amber) -->
+            <article class="pillar-card-dark pillar-card-dark--spark">
+              <div>
+                <div class="pillar-icon-box pillar-icon-box--spark">
+                  <!-- Graphic 6.5: Converging Multi-Node Network SVG (#EA580C) -->
+                  <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                    <line x1="16" y1="7" x2="7" y2="23" stroke="#EA580C" stroke-width="2" />
+                    <line x1="16" y1="7" x2="25" y2="23" stroke="#EA580C" stroke-width="2" />
+                    <line x1="7" y1="23" x2="25" y2="23" stroke="#FDBA74" stroke-width="2" />
+                    <circle cx="16" cy="7" r="3.5" fill="#EA580C" />
+                    <circle cx="7" cy="23" r="3.2" fill="#FDBA74" />
+                    <circle cx="25" cy="23" r="3.2" fill="#FDBA74" />
+                  </svg>
+                </div>
+                <div class="telemetry-eyebrow" style="color: #FDBA74; margin-bottom: 0.35rem;">
+                  05 / EXPRESSIVE &amp; ACTION PILLAR
+                </div>
+                <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                  Leadership &amp; Teamwork
+                </h3>
+                <p style="font-size: 0.88rem; color: #FDBA74; font-style: italic; margin-bottom: 0.5rem;">
+                  Don’t Wait for a Title to Become a Leader.
+                </p>
+                <p style="font-size: 0.9rem; color: #CBD5E1;">
+                  Take initiative, resolve team conflicts, and collaborate effectively under live pressure.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 06: Creativity, Adaptability & Growth Mindset (#0D9488 Neuro-Teal) -->
+            <article class="pillar-card-dark pillar-card-dark--teal">
+              <div>
+                <div class="pillar-icon-box pillar-icon-box--teal">
+                  <!-- Graphic 6.6: Morphing Neural Node SVG (#0D9488) -->
+                  <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                    <rect x="6" y="6" width="20" height="20" rx="6" transform="rotate(15 16 16)" stroke="#14B8A6" stroke-width="2" />
+                    <rect x="8" y="8" width="16" height="16" rx="4" transform="rotate(-15 16 16)" stroke="#5EEAD4" stroke-width="1.8" />
+                    <circle cx="16" cy="16" r="3" fill="#5EEAD4" />
+                  </svg>
+                </div>
+                <div class="telemetry-eyebrow" style="color: #5EEAD4; margin-bottom: 0.35rem;">
+                  06 / HUMAN &amp; EMOTIONAL PILLAR
+                </div>
+                <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                  Creativity, Adaptability &amp; Growth Mindset
+                </h3>
+                <p style="font-size: 0.88rem; color: #5EEAD4; font-style: italic; margin-bottom: 0.5rem;">
+                  The Future Belongs to Those Who Keep Learning.
+                </p>
+                <p style="font-size: 0.9rem; color: #CBD5E1;">
+                  Welcome rule changes, turn mistakes into feedback data, and adapt to any environment.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Specialised Modern Labs Strip (Included / Customisable) -->
+          <div class="bonus-labs-strip">
+            <div class="hq-card-dark" style="border-left: 3px solid var(--hq-brand-teal-light);">
+              <div class="telemetry-eyebrow" style="color: #5EEAD4; margin-bottom: 0.3rem;">
+                SPECIALISED MODERN LAB A // INCLUDED &amp; CUSTOMISABLE
+              </div>
+              <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.35rem;">
+                Financial Literacy — <em>Make Money Make Sense.</em>
+              </h3>
+              <p style="font-size: 0.9rem; color: #CBD5E1;">
+                Smart budgeting, saving psychology, responsible borrowing, and investment awareness.
+              </p>
+            </div>
+
+            <div class="hq-card-dark" style="border-left: 3px solid var(--hq-brand-sky);">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.3rem;">
+                SPECIALISED MODERN LAB B // INCLUDED &amp; CUSTOMISABLE
+              </div>
+              <h3 class="module-header" style="color: #FFFFFF; margin-bottom: 0.35rem;">
+                Digital &amp; AI Literacy — <em>Use Technology. Don’t Just Consume It.</em>
+              </h3>
+              <p style="font-size: 0.9rem; color: #CBD5E1;">
+                Understanding AI, verifying digital misinformation, and responsible tech habits.
+              </p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-bottom: 3.5rem;">
+            <a href="#programmes" class="btn btn-ghost-sky" data-nav-target="programmes">
+              Explore Full Curriculum Outcomes &amp; Age Tracks (Ages 8–19) &rarr;
+            </a>
+          </div>
+
+          <!-- SECTION 1.6: BOTTOM CONVERSION BANNER — THE 12-MINUTE LIVE CLASSROOM CHALLENGE -->
+          <div class="challenge-callout-banner">
+            <div class="eyebrow-badge eyebrow-badge--rose">
+              <span class="live-dot live-dot--amber"></span>
+              <span>NO SLIDE DECKS • NO BROCHURE PROMISES • PURE 4K LIVE PROOF</span>
+            </div>
+            <h2 class="section-header" style="color: #FFFFFF; margin-bottom: 0.75rem;">
+              Give Us 12 Minutes With 8 of Your Quietest, Most Average Students.
+            </h2>
+            <p class="lead-copy" style="color: #E2E8F0; max-width: 860px; margin-bottom: 1.5rem;">
+              Please don’t send us your school toppers. Invite us during any free period tomorrow, hand us 8 middle-of-the-pack students, and watch from the back of the room as we run our live <strong>"Out-of-Syllabus Black-Box" Experiment</strong>—rewiring how they decode unseen problems, handle pressure, and speak in 720 seconds.
+            </p>
+            <a href="#book-experiment" class="btn btn-spark" data-nav-target="book-experiment">
+              Book the Free 12-Minute Classroom Test &rarr;
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- /#view-home -->
+
+    <!-- ======================================================================
+         VIEW 2: THE SCIENCE & CORE ENGINEERING ("LEARNING HOW TO LEARN") (#science)
+         ====================================================================== -->
+    <div id="view-science" class="app-view" role="region" aria-label="The Science View">
+
+      <!-- SECTION 2.1: PAGE HERO -->
+      <section class="section-void section-pad">
+        <div class="hq-container">
+          <div class="eyebrow-badge eyebrow-badge--dark">
+            01 // OUR CORE INNOVATION: WHAT IS "LEARNING HOW TO LEARN"?
+          </div>
+          <h1 class="page-title" style="color: #FFFFFF; max-width: 820px; margin-bottom: 1rem;">
+            Not Another Subject. It Is Brain Engineering.
+          </h1>
+          <p class="lead-copy" style="color: #CBD5E1; max-width: 840px;">
+            In a fast-shifting world, whatever topic you memorise today may be outdated tomorrow. That is why HOLOGIQ does <strong>not</strong> focus on teaching school subjects—instead, we engineer an observation and feedback loop inside the brain so it designs its own method to master any unfamiliar task.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 2.2: REDEFINING LEARNING — WHY ZERO SUBJECT DEPENDENCE MAKES A CHILD UNSTOPPABLE -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container">
+          <div class="redefine-split">
+            <!-- Left Card: Old vs HOLOGIQ Learning -->
+            <div class="hq-card-light" style="display: flex; flex-direction: column; gap: 1.25rem; justify-content: center;">
+              <!-- Left Card Top: Crimson Tag -->
+              <div style="padding: 1.25rem; border-radius: 10px; background: #FFF1F2; border: 1px solid #FECDD3; border-left: 4px solid var(--hq-state-rote-alert);">
+                <div class="telemetry-eyebrow" style="color: var(--hq-state-rote-alert); margin-bottom: 0.35rem;">
+                  WHAT PEOPLE WRONGLY THINK "LEARNING" MEANS
+                </div>
+                <h2 class="module-header" style="margin-bottom: 0.45rem;">
+                  <em>"Sit Down and Memorise This Topic"</em>
+                </h2>
+                <p style="font-size: 0.94rem;">
+                  A temporary cramming task where a child forces isolated sentences into short-term memory and depends on a tutor or teacher for every single next step.
+                </p>
+              </div>
+
+              <!-- Left Card Bottom: Neuro-Teal Tag -->
+              <div style="padding: 1.25rem; border-radius: 10px; background: #F0FDFA; border: 1px solid #99F6E4; border-left: 4px solid var(--hq-brand-teal);">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">
+                  WHAT HOLOGIQ ENGINEERS INSIDE THE BRAIN
+                </div>
+                <h2 class="module-header" style="margin-bottom: 0.45rem;">
+                  <em>A Brain That Designs Its Own Learning Method</em>
+                </h2>
+                <p style="font-size: 0.94rem;">
+                  When faced with any new skill, tough chapter, or unfamiliar life challenge, the student’s brain automatically figures out <strong>what to learn</strong> and <strong>how to engineer its approach</strong> to tackle it.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Dark Card: Three Lifelong Advantages -->
+            <div class="hq-card-dark" style="background: #0F172A; padding: 1.75rem; display: flex; flex-direction: column; justify-content: center;">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.45rem;">
+                ZERO SUBJECT DEPENDENCE • 100% SELF-SUFFICIENCY
+              </div>
+              <h2 class="section-header" style="color: #FFFFFF; margin-bottom: 1.25rem;">
+                Three Lifelong Advantages of an Engineered Brain
+              </h2>
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div style="padding: 0.9rem 1rem; background: rgba(255,255,255,0.03); border: 1px solid #1E293B; border-radius: 8px;">
+                  <div style="font-family: var(--hq-font-display); font-weight: 700; color: #38BDF8; margin-bottom: 0.25rem;">
+                    1. Effortless Academics as a Natural Byproduct
+                  </div>
+                  <p style="font-size: 0.9rem; color: #CBD5E1;">
+                    Because their brain knows how to break down and structure tasks, even understanding or recalling heavy school chapters becomes twice as fast.
+                  </p>
+                </div>
+
+                <div style="padding: 0.9rem 1rem; background: rgba(255,255,255,0.03); border: 1px solid #1E293B; border-radius: 8px;">
+                  <div style="font-family: var(--hq-font-display); font-weight: 700; color: #5EEAD4; margin-bottom: 0.25rem;">
+                    2. Never Left Behind When Technology Shifts
+                  </div>
+                  <p style="font-size: 0.9rem; color: #CBD5E1;">
+                    When AI or career landscapes change overnight, they don’t panic—they observe, adapt, and master the new skill on demand.
+                  </p>
+                </div>
+
+                <div style="padding: 0.9rem 1rem; background: rgba(255,255,255,0.03); border: 1px solid #1E293B; border-radius: 8px;">
+                  <div style="font-family: var(--hq-font-display); font-weight: 700; color: #FDBA74; margin-bottom: 0.25rem;">
+                    3. Self-Driven for Life
+                  </div>
+                  <p style="font-size: 0.9rem; color: #CBD5E1;">
+                    No more chasing or spoon-feeding at home; the student becomes an independent, self-correcting thinker.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2.3: STEP-BY-STEP PRODUCT ENGINEERING — THE 4-STEP FEEDBACK LOOP (GRAPHIC 5) -->
+      <section class="section-surface section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              02 // STEP-BY-STEP: HOW OUR BRAIN ENGINEERING WORKS
+            </div>
+            <h2 class="section-header">How a HOLOGIQ-Trained Student Tackles Any Unfamiliar Task</h2>
+            <p class="lead-copy" style="margin-top: 0.75rem;">
+              Instead of blindly cramming or freezing under pressure, we train students through continuous workshops to run a <strong>4-Step Observation &amp; Self-Fixing Feedback Loop</strong> whenever they face any challenge:
+            </p>
+          </div>
+
+          <div class="loop-interactive-wrap">
+            <!-- Graphic 5: Interactive 4-Node SVG Circuit Loop -->
+            <div class="hq-card-dark" style="background: #090D16; padding: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <span class="telemetry-eyebrow" style="color: var(--hq-brand-sky);">
+                  INTERACTIVE CIRCUIT // CLICK ANY NODE (01–04)
+                </span>
+                <span class="telemetry-eyebrow" id="loop-active-indicator" style="color: #5EEAD4;">
+                  ACTIVE: STEP 01 // OBSERVE
+                </span>
+              </div>
+
+              <svg viewBox="0 0 520 340" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" role="img" aria-label="4-Step Learning How to Learn Continuous Feedback Loop Circuit">
+                <!-- Background Circuit Grid Lines -->
+                <rect x="4" y="4" width="512" height="332" rx="12" fill="#0B1120" stroke="#1E293B" />
+
+                <!-- Animated Data Pulse Loop Paths -->
+                <path class="svg-dash-flow" d="M225 78 L305 78" stroke="#38BDF8" stroke-width="3" fill="none" />
+                <path class="svg-dash-flow" d="M395 128 L395 198" stroke="#EA580C" stroke-width="3" fill="none" />
+                <path class="svg-dash-flow" d="M305 250 L225 250" stroke="#14B8A6" stroke-width="3" fill="none" />
+                <path class="svg-dash-flow" d="M125 198 L125 128" stroke="#38BDF8" stroke-width="3" fill="none" />
+
+                <!-- Center Core Hub -->
+                <circle cx="260" cy="164" r="38" fill="rgba(17, 24, 39, 0.95)" stroke="#38BDF8" stroke-width="1.5" />
+                <text x="260" y="160" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">CONTINUOUS</text>
+                <text x="260" y="175" text-anchor="middle" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">SELF-FIX</text>
+
+                <!-- NODE 01: OBSERVE -->
+                <g class="loop-svg-node" data-step="1" tabindex="0" role="button" aria-label="Step 01 Observe">
+                  <rect id="svg-node-box-1" x="24" y="30" width="204" height="96" rx="10" fill="rgba(29, 78, 216, 0.28)" stroke="#38BDF8" stroke-width="2.5" />
+                  <text x="38" y="53" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">01 // UNDERSTAND &amp; OBSERVE</text>
+                  <text x="38" y="75" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">STEP 01 • OBSERVE</text>
+                  <text x="38" y="94" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Decode the task &amp; spot</text>
+                  <text x="38" y="110" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">the real pattern (10s pause)</text>
+                </g>
+
+                <!-- NODE 02: ENGINEER -->
+                <g class="loop-svg-node" data-step="2" tabindex="0" role="button" aria-label="Step 02 Engineer">
+                  <rect id="svg-node-box-2" x="292" y="30" width="204" height="96" rx="10" fill="#111827" stroke="#1D4ED8" stroke-width="1.5" />
+                  <text x="306" y="53" fill="#93C5FD" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">02 // EXPLORE &amp; QUESTION</text>
+                  <text x="306" y="75" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">STEP 02 • ENGINEER</text>
+                  <text x="306" y="94" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Break into logical parts</text>
+                  <text x="306" y="110" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">&amp; hunt for boundary (✗)</text>
+                </g>
+
+                <!-- NODE 03: TEST -->
+                <g class="loop-svg-node" data-step="3" tabindex="0" role="button" aria-label="Step 03 Test">
+                  <rect id="svg-node-box-3" x="292" y="200" width="204" height="96" rx="10" fill="#111827" stroke="#EA580C" stroke-width="1.5" />
+                  <text x="306" y="223" fill="#FDBA74" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">03 // PRACTISE SIMULATION</text>
+                  <text x="306" y="245" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">STEP 03 • TEST</text>
+                  <text x="306" y="264" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Live timed team pressure</text>
+                  <text x="306" y="280" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">&amp; spot friction gaps</text>
+                </g>
+
+                <!-- NODE 04: SELF-FIX -->
+                <g class="loop-svg-node" data-step="4" tabindex="0" role="button" aria-label="Step 04 Self-Fix">
+                  <rect id="svg-node-box-4" x="24" y="200" width="204" height="96" rx="10" fill="#111827" stroke="#0D9488" stroke-width="1.5" />
+                  <text x="38" y="223" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">04 // REFLECT &amp; CORRECT</text>
+                  <text x="38" y="245" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">STEP 04 • SELF-FIX</text>
+                  <text x="38" y="264" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Regulate stress in 5s &amp;</text>
+                  <text x="38" y="280" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="11">lock in mental upgrade</text>
+                </g>
+              </svg>
+
+              <!-- Synchronized Interactive Step Detail Terminal -->
+              <div id="loop-detail-box" style="margin-top: 0.9rem; padding: 1rem; border-radius: 8px; background: #111827; border: 1px solid #38BDF8;">
+                <div class="telemetry-eyebrow" id="loop-detail-tag" style="color: #38BDF8; margin-bottom: 0.3rem;">
+                  STEP 01 • OBSERVE (DECODE THE TASK — #1D4ED8)
+                </div>
+                <div id="loop-detail-title" style="font-family: var(--hq-font-display); font-weight: 700; font-size: 1.05rem; color: #FFFFFF; margin-bottom: 0.35rem;">
+                  Pause for 10 Seconds Before Jumping In
+                </div>
+                <p id="loop-detail-copy" style="font-size: 0.88rem; color: #E2E8F0;">
+                  Ask: <em>What kind of problem is this, what are the real rules, and how is my emotion reacting right now?</em> Instead of blind pattern-copying, the prefrontal cortex scans the actual structure of the task.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column: 4 Clickable Step Cards -->
+            <div class="loop-nodes-grid">
+              <button type="button" class="loop-step-card active" data-step="1">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.35rem;">
+                  01 // UNDERSTAND &amp; OBSERVE
+                </div>
+                <h3 class="module-header" style="margin-bottom: 0.4rem;">
+                  STEP 01 • OBSERVE (Decode the Task)
+                </h3>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  Pause for 10 seconds before jumping in. Ask: <em>What kind of problem is this, what are the real rules, and how is my emotion reacting right now?</em>
+                </p>
+              </button>
+
+              <button type="button" class="loop-step-card" data-step="2">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.35rem;">
+                  02 // EXPLORE &amp; QUESTION
+                </div>
+                <h3 class="module-header" style="margin-bottom: 0.4rem;">
+                  STEP 02 • ENGINEER (Build the Approach)
+                </h3>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  Break the unfamiliar task into small, logical parts, connect it to real-life cause-and-effect, and design a clear mental strategy.
+                </p>
+              </button>
+
+              <button type="button" class="loop-step-card" data-step="3">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark); margin-bottom: 0.35rem;">
+                  03 // PRACTISE UNDER SIMULATION
+                </div>
+                <h3 class="module-header" style="margin-bottom: 0.4rem;">
+                  STEP 03 • TEST (Try &amp; Spot Gaps)
+                </h3>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  Put the strategy into action under live constraints and intentionally test boundaries (<code>FAIL ✗</code>) to see clearly where mistakes or friction happen.
+                </p>
+              </button>
+
+              <button type="button" class="loop-step-card" data-step="4">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">
+                  04 // REFLECT &amp; SELF-CORRECT
+                </div>
+                <h3 class="module-header" style="margin-bottom: 0.4rem;">
+                  STEP 04 • SELF-FIX (Upgrade &amp; Adapt)
+                </h3>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  Regulate frustration in seconds, adjust the method based on feedback, and master the task twice as fast on the next round.
+                </p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bottom Result Callout Bar -->
+          <div style="margin-top: 1.75rem; padding: 1.15rem 1.35rem; background: #F0FDFA; border: 1px solid #99F6E4; border-left: 4px solid var(--hq-brand-teal); border-radius: 10px; font-size: 0.98rem; color: var(--hq-text-primary);">
+            <strong>THE RESULT:</strong> Whether it is a tough Grade 10 Physics derivation, a high-pressure stage speech, or a brand-new AI tool, the child’s brain knows exactly how to decode and master it.
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2.4: SOLVING THE #1 EXAM COMPLAINT — WHY STUDENTS BLANK OUT & HOW WE FIX IT (GRAPHIC 4) -->
+      <section class="section-void section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--rose">
+              03 // SOLVING THE #1 EXAM COMPLAINT OF PARENTS &amp; TEACHERS
+            </div>
+            <h2 class="section-header" style="color: #FFFFFF;">
+              Why Hardworking Students Blank Out in Exams—And How We Fix It
+            </h2>
+            <p class="lead-copy" style="color: #CBD5E1; margin-top: 0.75rem;">
+              Every teacher and parent asks: <em>"He knew all the answers at home last night—why did he leave the exam paper blank today?"</em> When a child memorises without understanding, their recall fails due to two biological traps:
+            </p>
+          </div>
+
+          <!-- Graphic 4: The "Exam Blank-Out" (Cortisol Spike vs. Prefrontal Recall) SVG Oscilloscope -->
+          <div class="oscilloscope-card">
+            <div class="osc-controls-bar">
+              <div>
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky);">
+                  DIAGNOSTIC OSCILLOSCOPE // CORTISOL SPIKE VS. PREFRONTAL MEMORY RECALL
+                </div>
+                <div style="font-size: 0.85rem; color: #94A3B8;">
+                  Toggle between brain states when an unseen "twisted" question appears at T = 00:00
+                </div>
+              </div>
+              <div class="osc-toggle-group" role="group" aria-label="Oscilloscope state toggle">
+                <button type="button" class="osc-toggle-btn active" data-osc-mode="both">Compare Both</button>
+                <button type="button" class="osc-toggle-btn" data-osc-mode="rote">Untrained Rote Brain</button>
+                <button type="button" class="osc-toggle-btn" data-osc-mode="hologiq">HOLOGIQ Engineered Brain</button>
+              </div>
+            </div>
+
+            <!-- Wide Responsive SVG Oscilloscope (viewBox="0 0 800 260") -->
+            <svg viewBox="0 0 800 260" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Cortisol Spike versus Prefrontal Recall Oscilloscope Chart" style="background: #090D16; border: 1px solid #1E293B; border-radius: 10px;">
+              <!-- Subtle Oscilloscope Grid -->
+              <line x1="60" y1="40" x2="770" y2="40" stroke="#1E293B" stroke-width="1" />
+              <line x1="60" y1="115" x2="770" y2="115" stroke="#1E293B" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="60" y1="195" x2="770" y2="195" stroke="#1E293B" stroke-width="1" />
+              <line x1="180" y1="20" x2="180" y2="225" stroke="#EA580C" stroke-width="1.5" stroke-dasharray="3 3" />
+
+              <!-- Axis Labels -->
+              <text x="12" y="44" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">100%</text>
+              <text x="12" y="119" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="11">50%</text>
+              <text x="18" y="199" fill="#FDA4AF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">0%</text>
+              <text x="180" y="244" text-anchor="middle" fill="#FDBA74" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">T=0: EXAM TWIST TRIGGER</text>
+
+              <!-- PATH A: Untrained Rote Brain (#E11D48 dashed wave) -->
+              <g id="osc-path-rote">
+                <!-- Cortisol Spike (Upward Surge) -->
+                <path d="M 60 115 L 180 115 L 235 28 L 285 42 L 340 35" fill="none" stroke="#E11D48" stroke-width="2.2" stroke-dasharray="4 3" opacity="0.75" />
+                <rect x="195" y="12" width="210" height="24" rx="4" fill="rgba(225, 29, 72, 0.2)" stroke="#E11D48" />
+                <text x="300" y="28" text-anchor="middle" fill="#FDA4AF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">▲ CORTISOL / AMYGDALA PANIC</text>
+
+                <!-- Memory Recall Line Dropping to 0% (Exam Blank-Out) -->
+                <path d="M 60 95 L 180 95 L 225 145 L 275 195 L 750 195" fill="none" stroke="#E11D48" stroke-width="3.5" stroke-dasharray="8 5" />
+                <circle cx="275" cy="195" r="5" fill="#E11D48" />
+                <rect x="460" y="168" width="275" height="26" rx="4" fill="rgba(225, 29, 72, 0.22)" stroke="#E11D48" />
+                <text x="597" y="185" text-anchor="middle" fill="#FDA4AF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">0% RECALL // EXAM BLANK-OUT</text>
+              </g>
+
+              <!-- PATH B: HOLOGIQ Engineered Brain (#0D9488 solid glowing wave) -->
+              <g id="osc-path-hologiq">
+                <path d="M 60 90 L 180 90 Q 210 112 240 75 Q 275 48 330 46 L 750 44" fill="none" stroke="#14B8A6" stroke-width="4" />
+                <!-- 5-Second Reset Switch Node -->
+                <circle cx="240" cy="75" r="7" fill="#EA580C" stroke="#FFFFFF" stroke-width="2" />
+                <rect x="252" y="64" width="204" height="24" rx="4" fill="rgba(13, 148, 136, 0.28)" stroke="#14B8A6" />
+                <text x="354" y="80" text-anchor="middle" fill="#CCFBF1" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">⚡ 5-SECOND RESET SWITCH</text>
+
+                <!-- 95%+ Optimal Recall Badge -->
+                <rect x="485" y="52" width="250" height="26" rx="4" fill="rgba(13, 148, 136, 0.25)" stroke="#0D9488" />
+                <text x="610" y="69" text-anchor="middle" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">95%+ OPTIMAL PREFRONTAL RECALL</text>
+              </g>
+            </svg>
+
+            <!-- Interactive SVG Diagnostic Comparison Bars (25% vs 92%) -->
+            <div class="diagnostic-bars-stack">
+              <!-- Bar 1: Without HOLOGIQ (25% Width) -->
+              <div class="diag-bar-card" style="border-left: 4px solid var(--hq-state-rote-alert);">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem;">
+                  <strong style="color: #FDA4AF; font-family: var(--hq-font-display);">
+                    Without HOLOGIQ: Blind Cramming + Exam Panic &rarr; HIGH BLANK-OUT RISK
+                  </strong>
+                  <span class="telemetry-eyebrow" style="color: #FDA4AF;">25% RECALL FRAGILITY</span>
+                </div>
+                <div class="diag-progress-track">
+                  <div class="diag-progress-fill" style="width: 25%; background-color: var(--hq-state-rote-alert);"></div>
+                </div>
+                <p style="font-size: 0.88rem; color: #CBD5E1;">
+                  <strong style="color: #FFFFFF;">Biological Pathway:</strong> Single-Thread Rote Memorisation &rarr; Tricky Page-1 Question Spikes Stress Hormones (Cortisol) &rarr; Brain’s Prefrontal Recall Centre Shuts Down &rarr; <strong style="color: #FDA4AF;">Child Forgets Everything They Studied.</strong>
+                </p>
+              </div>
+
+              <!-- Bar 2: With HOLOGIQ (92% Width) -->
+              <div class="diag-bar-card" style="border-left: 4px solid var(--hq-brand-teal-light);">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem;">
+                  <strong style="color: #5EEAD4; font-family: var(--hq-font-display);">
+                    With HOLOGIQ: Smart Task Engineering + Self-Fixing Emotional Calm &rarr; EFFORTLESS RECALL
+                  </strong>
+                  <span class="telemetry-eyebrow" style="color: #5EEAD4;">92% EFFORTLESS RECALL</span>
+                </div>
+                <div class="diag-progress-track">
+                  <div class="diag-progress-fill" style="width: 92%; background: linear-gradient(90deg, #1D4ED8 0%, #14B8A6 100%);"></div>
+                </div>
+                <p style="font-size: 0.88rem; color: #CBD5E1;">
+                  <strong style="color: #FFFFFF;">Biological Pathway:</strong> Multi-Node Concept Connections &rarr; 5-Second Emotional Reset Keeps Mind Calm &rarr; Thinking Brain Stays 100% Active &rarr; <strong style="color: #5EEAD4;">Fast Recall, Structured Answers &amp; Zero Panic.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 2.5: THE ULTIMATE OUTCOME — THE 4-DIMENSIONAL SELF-SUFFICIENT HUMAN -->
+      <section class="section-surface section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              04 // THE ULTIMATE OUTCOME: BEFORE REAL AI METRICS ARRIVE
+            </div>
+            <h2 class="section-header">Building a Self-Sufficient Human for Any Future</h2>
+            <p class="lead-copy" style="margin-top: 0.75rem;">
+              We don’t train students for one exam or one career. Our brain architecture prepares them to adapt seamlessly across all four dimensions of life:
+            </p>
+          </div>
+
+          <div class="dimensions-4grid">
+            <article class="hq-card-light card-top-cobalt">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.45rem;">
+                DIMENSION 01 // KNOWLEDGE
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.5rem;">Adapt to Any Knowledge</h3>
+              <p style="font-size: 0.92rem;">
+                Master new subjects, complex syllabus chapters, and unfamiliar technical skills independently in half the time.
+              </p>
+            </article>
+
+            <article class="hq-card-light card-top-cobalt">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.45rem;">
+                DIMENSION 02 // CAREER
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.5rem;">Adapt to Any Job</h3>
+              <p style="font-size: 0.92rem;">
+                Stay permanently ahead of AI automation with first-principles problem-solving, research mindset, and original creativity.
+              </p>
+            </article>
+
+            <article class="hq-card-light card-top-spark">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark); margin-bottom: 0.45rem;">
+                DIMENSION 03 // ENVIRONMENT
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.5rem;">Adapt to Any Environment</h3>
+              <p style="font-size: 0.92rem;">
+                Speak confidently on stage without a script, navigate social settings, and lead diverse teams with poise.
+              </p>
+            </article>
+
+            <article class="hq-card-light card-top-teal">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.45rem;">
+                DIMENSION 04 // EMOTION
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.5rem;">Adapt to Any Emotion</h3>
+              <p style="font-size: 0.92rem;">
+                A self-fixing internal state that regulates stress on the spot and turns setbacks or failures into immediate strength.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /#view-science -->
+
+    <!-- ======================================================================
+         VIEW 3: PROGRAMMES & CURRICULUM (AGES 8–19) (#programmes)
+         ====================================================================== -->
+    <div id="view-programmes" class="app-view" role="region" aria-label="Programmes and Curriculum View">
+
+      <!-- SECTION 3.1: PAGE HERO & INTERACTIVE AGE-STAGE SWITCHER -->
+      <section class="section-void section-pad">
+        <div class="hq-container">
+          <div class="eyebrow-badge eyebrow-badge--dark">
+            AGE-CALIBRATED HUMAN SKILL ARCHITECTURE (AGES 8–19)
+          </div>
+          <h1 class="page-title" style="color: #FFFFFF; max-width: 840px; margin-bottom: 0.85rem;">
+            Educate the Mind. Empower the Individual. Prepare for the Future.
+          </h1>
+          <p class="lead-copy" style="color: #CBD5E1; max-width: 860px;">
+            Developing the essential human skills that transform students into confident thinkers, articulate communicators, and future-ready individuals—customised by developmental stage from Grade 3 to College.
+          </p>
+
+          <!-- Age-Band Filter Toggle -->
+          <div class="age-filter-bar" role="group" aria-label="Age-Band Curriculum Filter">
+            <button type="button" class="age-filter-btn active" data-age-band="all">
+              <span>All Age Tracks (Ages 8–19)</span>
+              <span class="telemetry-eyebrow" style="color: #38BDF8; margin-left: 0.75rem;">FULL VIEW</span>
+            </button>
+            <button type="button" class="age-filter-btn" data-age-band="foundational">
+              <span>Foundational Lab (Ages 8–12 / Grades 3–7)</span>
+              <span class="telemetry-eyebrow" style="color: #5EEAD4; margin-left: 0.75rem;">FOUNDATION</span>
+            </button>
+            <button type="button" class="age-filter-btn" data-age-band="mastery">
+              <span>Mastery &amp; Future Lab (Ages 13–19 / Grades 8–12 &amp; College)</span>
+              <span class="telemetry-eyebrow" style="color: #FDBA74; margin-left: 0.75rem;">MASTERY</span>
+            </button>
+          </div>
+
+          <!-- Interactive Age-Stage Adaptation Tracks -->
+          <div class="tracks-3grid">
+            <div class="track-stage-card highlighted" data-track-card="foundational">
+              <div class="telemetry-eyebrow" style="color: #5EEAD4; margin-bottom: 0.35rem;">
+                TRACK 01 // AGES 8–11 | GRADES 3–6
+              </div>
+              <h2 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                Foundation Lab
+              </h2>
+              <p style="font-size: 0.9rem; color: #CBD5E1;">
+                Playful observation games, breaking stage hesitation, the 3-second emotional reset switch, team fairness, and curiosity triggers.
+              </p>
+            </div>
+
+            <div class="track-stage-card highlighted" data-track-card="mastery">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.35rem;">
+                TRACK 02 // AGES 12–15 | GRADES 7–10
+              </div>
+              <h2 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                Builder Lab
+              </h2>
+              <p style="font-size: 0.9rem; color: #CBD5E1;">
+                Eliminating rote exam blank-outs, unscripted 3-point public speaking, cognitive bias detection, peer leadership, and exam pressure mastery.
+              </p>
+            </div>
+
+            <div class="track-stage-card highlighted" data-track-card="mastery">
+              <div class="telemetry-eyebrow" style="color: #FDBA74; margin-bottom: 0.35rem;">
+                TRACK 03 // AGES 16–19 | GRADES 11–12 &amp; COLLEGE
+              </div>
+              <h2 class="module-header" style="color: #FFFFFF; margin-bottom: 0.45rem;">
+                Launchpad Lab
+              </h2>
+              <p style="font-size: 0.9rem; color: #CBD5E1;">
+                First-principles analytical reasoning, career &amp; stream clarity, interview &amp; debate poise, AI/financial fluency, and executive decision-making.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3.2: DEEP-DIVE INTO OUR 6 CORE TRAINING PROGRAMMES -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              6 CORE HUMAN CAPABILITY PROGRAMMES • STRICT SEMANTIC ARCHITECTURE
+            </div>
+            <h2 class="section-header">Deep-Dive Into Our 6 Core Training Programmes</h2>
+          </div>
+
+          <div class="programme-deep-stack">
+
+            <!-- Programme 01: Critical Thinking & Problem-Solving (#1D4ED8 Synapse Blue) -->
+            <article class="programme-full-card card-top-cobalt">
+              <div class="programme-full-grid">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                    <div class="pillar-icon-box pillar-icon-box--cobalt" style="margin-bottom: 0;">
+                      <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                        <polygon points="16,3 29,11 29,23 16,30 3,23 3,11" stroke="#1D4ED8" stroke-width="2.2" />
+                        <polygon points="16,8 24,21 8,21" stroke="#1D4ED8" fill="rgba(29,78,216,0.15)" stroke-width="2" />
+                        <circle cx="16" cy="17" r="2.5" fill="#1D4ED8" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt);">PROGRAMME 01 // SYNAPSE BLUE</span>
+                      <h3 class="section-header" style="font-size: 1.35rem;">Critical Thinking &amp; Problem-Solving</h3>
+                    </div>
+                  </div>
+                  <p style="font-family: var(--hq-font-display); font-weight: 700; font-size: 1.05rem; color: var(--hq-brand-cobalt); margin-bottom: 0.25rem;">
+                    Don’t Just Find Answers. Learn to Question Them.
+                  </p>
+                  <p style="font-style: italic; color: var(--hq-text-muted); margin-bottom: 0.85rem;">
+                    Think deeper. Question smarter. Solve better.
+                  </p>
+                  <p style="font-size: 0.94rem;">
+                    In a world where AI can generate answers within seconds, the ability to evaluate information, question assumptions, identify biases, and solve unfamiliar problems becomes increasingly valuable. Our training helps students move beyond passive learning and develop the ability to analyse situations, think independently, evaluate evidence, and approach challenges with logic and creativity.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt);">STUDENTS DEVELOP:</div>
+                  <ul class="develop-checklist">
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Logical and analytical reasoning on unseen problems</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Independent thinking and structured decision-making</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Problem-solving and creative thinking under constraints</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Information evaluation and real-time fact-checking</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> The ability to question assumptions and recognise cognitive biases</li>
+                  </ul>
+                  <div class="why-matters-bar" style="background: #EFF6FF; border: 1px solid #BFDBFE; color: #1E3A8A;">
+                    <strong>Why It Matters:</strong> Students learn not just <em>what</em> to think, but <em>how</em> to think.
+                  </div>
+                  <div class="age-adaptation-note telemetry-eyebrow" data-prog-note="1" style="margin-top: 0.65rem; color: var(--hq-text-muted);">
+                    AGE CALIBRATION: 8–12 Pattern Detective Labs | 13–19 First-Principles &amp; Bias Audits
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Programme 02: Emotional Intelligence & Self-Correction (#0D9488 Neuro-Teal) -->
+            <article class="programme-full-card card-top-teal">
+              <div class="programme-full-grid">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                    <div class="pillar-icon-box pillar-icon-box--teal" style="margin-bottom: 0;">
+                      <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                        <circle cx="16" cy="16" r="12" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 2" />
+                        <path d="M4 16 C9 8, 13 8, 16 16 C19 24, 23 24, 28 16" stroke="#0D9488" stroke-width="2.5" stroke-linecap="round" />
+                        <circle cx="16" cy="16" r="2.8" fill="#0D9488" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="telemetry-eyebrow" style="color: var(--hq-brand-teal);">PROGRAMME 02 // NEURO-TEAL</span>
+                      <h3 class="section-header" style="font-size: 1.35rem;">Emotional Intelligence &amp; Self-Correction</h3>
+                    </div>
+                  </div>
+                  <p style="font-family: var(--hq-font-display); font-weight: 700; font-size: 1.05rem; color: var(--hq-brand-teal); margin-bottom: 0.25rem;">
+                    Understand Yourself. Connect with Others. Lead with Empathy.
+                  </p>
+                  <p style="font-style: italic; color: var(--hq-text-muted); margin-bottom: 0.85rem;">
+                    Success isn’t just about intelligence. It’s also about understanding emotions.
+                  </p>
+                  <p style="font-size: 0.94rem;">
+                    Academic ability alone cannot prepare students for every challenge they will face. Understanding emotions, managing stress, responding constructively to setbacks, and building healthy relationships are equally important life skills. Our emotional intelligence training helps students recognise their emotions, develop self-awareness, regulate their responses under exam or social pressure, understand others' perspectives, and become a self-fixing better human every moment.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal);">STUDENTS DEVELOP:</div>
+                  <ul class="develop-checklist">
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> Self-awareness and rapid emotional regulation under pressure</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> Empathy and sharp social awareness</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> Exam stress and daily frustration management</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> Healthy interpersonal relationships</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> Resilience and constructive responses to failure</li>
+                  </ul>
+                  <div class="why-matters-bar" style="background: #F0FDFA; border: 1px solid #99F6E4; color: #115E59;">
+                    <strong>Why It Matters:</strong> Emotionally aware students are better equipped to navigate high-pressure challenges, collaborate with others, and build healthier relationships.
+                  </div>
+                  <div class="age-adaptation-note telemetry-eyebrow" data-prog-note="2" style="margin-top: 0.65rem; color: var(--hq-text-muted);">
+                    AGE CALIBRATION: 8–12 3-Sec Physical Reset Switch | 13–19 Exam Cortisol Regulation
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Programme 03: Communication & Public Speaking (#EA580C Ignition Amber) -->
+            <article class="programme-full-card card-top-spark">
+              <div class="programme-full-grid">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                    <div class="pillar-icon-box pillar-icon-box--spark" style="margin-bottom: 0;">
+                      <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                        <circle cx="9" cy="16" r="3.5" fill="#EA580C" />
+                        <path d="M15 11 C18 13.5, 18 18.5, 15 21" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" />
+                        <path d="M19.5 7.5 C24 12, 24 20, 19.5 24.5" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" />
+                        <path d="M24 4 C30 10.5, 30 21.5, 24 28" stroke="#EA580C" stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="telemetry-eyebrow" style="color: var(--hq-brand-spark);">PROGRAMME 03 // IGNITION AMBER</span>
+                      <h3 class="section-header" style="font-size: 1.35rem;">Communication &amp; Public Speaking</h3>
+                    </div>
+                  </div>
+                  <p style="font-family: var(--hq-font-display); font-weight: 700; font-size: 1.05rem; color: var(--hq-brand-spark); margin-bottom: 0.25rem;">
+                    Your Ideas Deserve to Be Heard.
+                  </p>
+                  <p style="font-style: italic; color: var(--hq-text-muted); margin-bottom: 0.85rem;">
+                    Think confidently. Speak clearly. Communicate effectively.
+                  </p>
+                  <p style="font-size: 0.94rem;">
+                    Having knowledge is important, but being able to express that knowledge with clarity and confidence is what allows students to share ideas, collaborate, and create opportunities. Our training helps students overcome the fear of speaking, organise their thoughts without memorised scripts, express opinions confidently, communicate effectively, and present themselves in academic, professional, and social settings.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark);">STUDENTS DEVELOP:</div>
+                  <ul class="develop-checklist">
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Unscripted public speaking and presentation skills</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Confident verbal and non-verbal body language</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Active listening and meaningful dialogue</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Fearless confidence in expressing independent opinions</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Structured thinking and persuasive communication</li>
+                  </ul>
+                  <div class="why-matters-bar" style="background: #FFF7ED; border: 1px solid #FED7AA; color: #9A3412;">
+                    <strong>Why It Matters:</strong> Strong communication skills help students turn their silent knowledge and ideas into meaningful real-world impact.
+                  </div>
+                  <div class="age-adaptation-note telemetry-eyebrow" data-prog-note="3" style="margin-top: 0.65rem; color: var(--hq-text-muted);">
+                    AGE CALIBRATION: 8–12 Breaking Stage Hesitation | 13–19 3-Finger Unscripted Debate &amp; Viva
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Programme 04: Career Guidance & Future Readiness (#1D4ED8 Synapse Blue) -->
+            <article class="programme-full-card card-top-cobalt">
+              <div class="programme-full-grid">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                    <div class="pillar-icon-box pillar-icon-box--cobalt" style="margin-bottom: 0;">
+                      <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                        <circle cx="16" cy="16" r="12" stroke="#1D4ED8" stroke-width="2" />
+                        <polygon points="16,6 20,16 16,26 12,16" fill="rgba(29,78,216,0.16)" stroke="#1D4ED8" stroke-width="1.8" />
+                        <circle cx="16" cy="16" r="2.2" fill="#1D4ED8" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt);">PROGRAMME 04 // SYNAPSE BLUE</span>
+                      <h3 class="section-header" style="font-size: 1.35rem;">Career Guidance &amp; Future Readiness</h3>
+                    </div>
+                  </div>
+                  <p style="font-family: var(--hq-font-display); font-weight: 700; font-size: 1.05rem; color: var(--hq-brand-cobalt); margin-bottom: 0.25rem;">
+                    Don’t Choose a Career by Default. Choose It with Direction.
+                  </p>
+                  <p style="font-style: italic; color: var(--hq-text-muted); margin-bottom: 0.85rem;">
+                    Discover your strengths. Explore your options. Build your future.
+                  </p>
+                  <p style="font-size: 0.94rem;">
+                    Choosing a career can feel overwhelming when students are unsure of their strengths, interests, or the opportunities available to them. Our career guidance programmes help students understand how their own brain works best, explore diverse career pathways, recognise emerging opportunities in the AI era, and make more informed educational and career decisions.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt);">STUDENTS DEVELOP:</div>
+                  <ul class="develop-checklist">
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Deep awareness of personal interests and cognitive strengths</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Understanding of diverse, non-traditional career pathways</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Knowledge of emerging industries and changing global job roles</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Structured career decision-making skills</li>
+                    <li><span style="color: var(--hq-brand-cobalt);">✓</span> Practical goal-setting and future planning</li>
+                  </ul>
+                  <div class="why-matters-bar" style="background: #EFF6FF; border: 1px solid #BFDBFE; color: #1E3A8A;">
+                    <strong>Why It Matters:</strong> Students gain greater clarity about their future and learn to make career choices based on informed exploration rather than herd pressure or assumptions.
+                  </div>
+                  <div class="age-adaptation-note telemetry-eyebrow" data-prog-note="4" style="margin-top: 0.65rem; color: var(--hq-text-muted);">
+                    AGE CALIBRATION: 8–12 Curiosity &amp; Strength Discovery | 13–19 Stream &amp; AI-Era Career Mapping
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Programme 05: Leadership & Teamwork (#EA580C Ignition Amber) -->
+            <article class="programme-full-card card-top-spark">
+              <div class="programme-full-grid">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                    <div class="pillar-icon-box pillar-icon-box--spark" style="margin-bottom: 0;">
+                      <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                        <line x1="16" y1="7" x2="7" y2="23" stroke="#EA580C" stroke-width="2" />
+                        <line x1="16" y1="7" x2="25" y2="23" stroke="#EA580C" stroke-width="2" />
+                        <line x1="7" y1="23" x2="25" y2="23" stroke="#EA580C" stroke-width="2" />
+                        <circle cx="16" cy="7" r="3.5" fill="#EA580C" />
+                        <circle cx="7" cy="23" r="3.2" fill="#EA580C" />
+                        <circle cx="25" cy="23" r="3.2" fill="#EA580C" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="telemetry-eyebrow" style="color: var(--hq-brand-spark);">PROGRAMME 05 // IGNITION AMBER</span>
+                      <h3 class="section-header" style="font-size: 1.35rem;">Leadership &amp; Teamwork</h3>
+                    </div>
+                  </div>
+                  <p style="font-family: var(--hq-font-display); font-weight: 700; font-size: 1.05rem; color: var(--hq-brand-spark); margin-bottom: 0.25rem;">
+                    Don’t Wait for a Title to Become a Leader.
+                  </p>
+                  <p style="font-style: italic; color: var(--hq-text-muted); margin-bottom: 0.85rem;">
+                    Take initiative. Work together. Make a difference.
+                  </p>
+                  <p style="font-size: 0.94rem;">
+                    Leadership is not limited to people in positions of authority. It involves taking responsibility, working collaboratively, making decisions, and helping a group move towards a common goal. Our training encourages students to develop leadership qualities through collaborative activities, practical challenges, group discussions, and live decision-making exercises.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark);">STUDENTS DEVELOP:</div>
+                  <ul class="develop-checklist">
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> High-trust teamwork and peer collaboration</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Personal responsibility and accountability</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Fast decision-making and initiative</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Constructive conflict resolution</li>
+                    <li><span style="color: var(--hq-brand-spark);">✓</span> Adaptability and collaborative leadership</li>
+                  </ul>
+                  <div class="why-matters-bar" style="background: #FFF7ED; border: 1px solid #FED7AA; color: #9A3412;">
+                    <strong>Why It Matters:</strong> Students learn to contribute meaningfully to teams, take ownership of their actions, and work effectively with people who have different perspectives.
+                  </div>
+                  <div class="age-adaptation-note telemetry-eyebrow" data-prog-note="5" style="margin-top: 0.65rem; color: var(--hq-text-muted);">
+                    AGE CALIBRATION: 8–12 Team Fairness &amp; Role Sharing | 13–19 Crisis Simulation &amp; Conflict Resolution
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Programme 06: Creativity, Adaptability & Growth Mindset (#0D9488 Neuro-Teal) -->
+            <article class="programme-full-card card-top-teal">
+              <div class="programme-full-grid">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                    <div class="pillar-icon-box pillar-icon-box--teal" style="margin-bottom: 0;">
+                      <svg viewBox="0 0 32 32" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none">
+                        <rect x="6" y="6" width="20" height="20" rx="6" transform="rotate(15 16 16)" stroke="#0D9488" stroke-width="2" />
+                        <rect x="8" y="8" width="16" height="16" rx="4" transform="rotate(-15 16 16)" stroke="#0D9488" stroke-width="1.8" />
+                        <circle cx="16" cy="16" r="3" fill="#0D9488" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="telemetry-eyebrow" style="color: var(--hq-brand-teal);">PROGRAMME 06 // NEURO-TEAL</span>
+                      <h3 class="section-header" style="font-size: 1.35rem;">Creativity, Adaptability &amp; Growth Mindset</h3>
+                    </div>
+                  </div>
+                  <p style="font-family: var(--hq-font-display); font-weight: 700; font-size: 1.05rem; color: var(--hq-brand-teal); margin-bottom: 0.25rem;">
+                    The Future Belongs to Those Who Keep Learning.
+                  </p>
+                  <p style="font-style: italic; color: var(--hq-text-muted); margin-bottom: 0.85rem;">
+                    Think creatively. Adapt confidently. Grow continuously.
+                  </p>
+                  <p style="font-size: 0.94rem;">
+                    As technology and workplaces continue to evolve, students need to be comfortable with change, open to new ideas, and willing to learn from mistakes. Our training encourages students to explore new perspectives, approach challenges creatively, develop a positive attitude towards learning, and build the confidence to adapt to unfamiliar situations.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal);">STUDENTS DEVELOP:</div>
+                  <ul class="develop-checklist">
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> Creative, lateral, and innovative thinking</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> High adaptability and mental flexibility</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> A resilient growth mindset and deep self-belief</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> The habit of learning from mistakes and feedback</li>
+                    <li><span style="color: var(--hq-brand-teal);">✓</span> Initiative and openness to new experiences</li>
+                  </ul>
+                  <div class="why-matters-bar" style="background: #F0FDFA; border: 1px solid #99F6E4; color: #115E59;">
+                    <strong>Why It Matters:</strong> Students become better prepared to navigate uncertainty, learn new skills on demand, and respond constructively to a changing world.
+                  </div>
+                  <div class="age-adaptation-note telemetry-eyebrow" data-prog-note="6" style="margin-top: 0.65rem; color: var(--hq-text-muted);">
+                    AGE CALIBRATION: 8–12 Mistake-to-Feedback Games | 13–19 Rule-Mutation &amp; Lateral Innovation
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3.3: ADDITIONAL SPECIALISED WORKSHOPS & COMPLETE CURRICULUM MATRIX -->
+      <section class="section-surface section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--teal">
+              MODERN LITERACY LABS &amp; EXECUTIVE CURRICULUM MATRIX
+            </div>
+            <h2 class="section-header">Additional Specialised Workshops &amp; Complete Curriculum Matrix</h2>
+          </div>
+
+          <div class="schematic-split-grid" style="margin-bottom: 2.5rem;">
+            <article class="hq-card-light card-top-teal">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">
+                SPOTLIGHT WORKSHOP 01 // PRACTICAL MONEY WISDOM
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">
+                Financial Literacy — <em>Make Money Make Sense.</em>
+              </h3>
+              <p style="font-size: 0.94rem;">
+                Budgeting, saving habits, financial decision-making, responsible borrowing, compounding, and foundational investment awareness.
+              </p>
+            </article>
+
+            <article class="hq-card-light card-top-cobalt">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.35rem;">
+                SPOTLIGHT WORKSHOP 02 // AI-ERA CITIZENSHIP
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">
+                Digital &amp; AI Literacy — <em>Use Technology. Don’t Just Consume It.</em>
+              </h3>
+              <p style="font-size: 0.94rem;">
+                Understanding how AI works, evaluating digital information, using AI without losing independent thought, and responsible digital citizenship.
+              </p>
+            </article>
+          </div>
+
+          <!-- Executive Curriculum Summary Table -->
+          <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.65rem;">
+            EXECUTIVE CURRICULUM SUMMARY TABLE (ALL 8 MODULES AT A GLANCE)
+          </div>
+          <div class="table-scroll-wrap">
+            <table class="hq-table">
+              <thead>
+                <tr>
+                  <th>Programme / Lab</th>
+                  <th>Core Mindset Shift</th>
+                  <th>Real Human Skills Developed</th>
+                  <th>Why It Matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>01. Critical Thinking</strong></td>
+                  <td>Don't Just Find Answers. Learn to Question Them.</td>
+                  <td>Logical reasoning, independent thinking, fact-checking, spotting biases</td>
+                  <td>Learn <em>how</em> to think, not just <em>what</em> to think</td>
+                </tr>
+                <tr>
+                  <td><strong>02. Emotional Intelligence</strong></td>
+                  <td>Understand Yourself. Connect With Empathy.</td>
+                  <td>Self-awareness, exam stress reset, empathy, bouncing back from failure</td>
+                  <td>Creates a self-fixing human in every moment</td>
+                </tr>
+                <tr>
+                  <td><strong>03. Public Speaking</strong></td>
+                  <td>Your Ideas Deserve to Be Heard.</td>
+                  <td>Unscripted stage speaking, body language, active listening, persuasion</td>
+                  <td>Turns silent knowledge into visible confidence</td>
+                </tr>
+                <tr>
+                  <td><strong>04. Career Readiness</strong></td>
+                  <td>Don't Choose by Default. Choose With Direction.</td>
+                  <td>Cognitive strength audit, emerging job awareness, informed goal-setting</td>
+                  <td>Replaces career confusion with self-driven clarity</td>
+                </tr>
+                <tr>
+                  <td><strong>05. Leadership &amp; Teams</strong></td>
+                  <td>Don't Wait for a Title to Become a Leader.</td>
+                  <td>Collaboration, ownership, conflict resolution, group decision-making</td>
+                  <td>Take initiative and bring out the best in peers</td>
+                </tr>
+                <tr>
+                  <td><strong>06. Growth Mindset</strong></td>
+                  <td>The Future Belongs to Continuous Learners.</td>
+                  <td>Creative thinking, mental flexibility, turning mistakes into feedback</td>
+                  <td>Immune to obsolescence in a shifting world</td>
+                </tr>
+                <tr>
+                  <td><strong>Bonus: Digital &amp; AI Lab</strong></td>
+                  <td>Use Technology. Don't Just Consume It.</td>
+                  <td>AI literacy, verifying digital misinformation, healthy tech habits</td>
+                  <td>Turns passive screen scrollers into smart pilots</td>
+                </tr>
+                <tr>
+                  <td><strong>Bonus: Financial Lab</strong></td>
+                  <td>Make Money Make Sense.</td>
+                  <td>Smart budgeting, saving psychology, responsible financial decisions</td>
+                  <td>Practical money wisdom before adulthood</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /#view-programmes -->
+
+    <!-- ======================================================================
+         VIEW 4: FOR SCHOOLS & COLLEGES (THE EMBEDDED PARTNERSHIP MODEL) (#schools)
+         ====================================================================== -->
+    <div id="view-schools" class="app-view" role="region" aria-label="For Schools and Colleges View">
+
+      <!-- SECTION 4.1: PAGE HERO -->
+      <section class="section-void section-pad">
+        <div class="hq-container">
+          <div class="eyebrow-badge eyebrow-badge--dark">
+            SEAMLESS INSTITUTIONAL INTEGRATION • GRADES 3 TO 12 &amp; COLLEGE
+          </div>
+          <h1 class="page-title" style="color: #FFFFFF; max-width: 880px; margin-bottom: 1rem;">
+            Education That Goes Beyond Academic Achievement—Built Right Into Your Timetable.
+          </h1>
+          <p class="lead-copy" style="color: #CBD5E1; max-width: 840px; margin-bottom: 1.5rem;">
+            We partner with schools and colleges as an embedded model alongside regular academics—bridging the gap between textbook learning and real-world readiness without adding extra syllabus burden or faculty workload.
+          </p>
+          <a href="#book-experiment" class="btn btn-spark" data-nav-target="book-experiment">
+            Schedule a 12-Minute Campus Demo &rarr;
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTION 4.2: HOW OUR TRAINING WORKS INSIDE YOUR SCHOOL (THE 4-STAGE DELIVERY CYCLE) -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              01 // INSIDE A 45-MINUTE WEEKLY HOLOGIQ SESSION
+            </div>
+            <h2 class="section-header">Practical, Activity-Based Learning Combined With Guided Reflection</h2>
+            <p class="lead-copy" style="margin-top: 0.75rem;">
+              No extra textbooks or memorisation exams. Every weekly period engages students through four structured experiential stages:
+            </p>
+          </div>
+
+          <div class="cycle-4grid">
+            <article class="hq-card-light card-top-cobalt">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.4rem;">
+                STAGE 01 // SYNAPSE BLUE
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">1. Understand</h3>
+              <p style="font-size: 0.92rem;">
+                Introduce essential cognitive concepts and mental models through relatable real-life examples and Socratic discussions.
+              </p>
+            </article>
+
+            <article class="hq-card-light card-top-cobalt">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.4rem;">
+                STAGE 02 // SYNAPSE BLUE
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">2. Explore</h3>
+              <p style="font-size: 0.92rem;">
+                Encourage students to question assumptions, analyse hidden patterns, express independent opinions, and consider multiple perspectives.
+              </p>
+            </article>
+
+            <article class="hq-card-light card-top-spark">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark); margin-bottom: 0.4rem;">
+                STAGE 03 // IGNITION AMBER
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">3. Practise</h3>
+              <p style="font-size: 0.92rem;">
+                Engage students in timed simulations, role-plays, team challenges, unscripted stage speeches, and problem-solving exercises.
+              </p>
+            </article>
+
+            <article class="hq-card-light card-top-teal">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.4rem;">
+                STAGE 04 // NEURO-TEAL
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">4. Reflect</h3>
+              <p style="font-size: 0.92rem;">
+                Help students identify what they have learned and map out how to apply it immediately in tonight’s studies and everyday life.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4.3: SIX REASONS SCHOOLS & COLLEGES PARTNER WITH HOLOGIQ (3x2 ICON GRID) -->
+      <section class="section-surface section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              INSTITUTIONAL VALUE ARCHITECTURE
+            </div>
+            <h2 class="section-header">Six Reasons Schools &amp; Colleges Partner With HOLOGIQ</h2>
+          </div>
+
+          <div class="reasons-6grid">
+            <article class="hq-card-light">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.35rem;">REASON 01</div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">Bridging the Gap Between Education &amp; Real-World Skills</h3>
+              <p style="font-size: 0.92rem;">
+                Complements academic education by upgrading focus, memory encoding, and practical skills applied in classrooms, exams, and future careers.
+              </p>
+            </article>
+
+            <article class="hq-card-light">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">REASON 02</div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">100% Practical, Activity-Based Learning</h3>
+              <p style="font-size: 0.92rem;">
+                Interactive sessions, live discussions, group simulations, and real-world scenarios that draw out even the quietest students.
+              </p>
+            </article>
+
+            <article class="hq-card-light">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark); margin-bottom: 0.35rem;">REASON 03</div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">Designed for Different Age Groups (Ages 8–19)</h3>
+              <p style="font-size: 0.92rem;">
+                Training content and cognitive activities calibrated to students' developmental stages, from foundational school habits to college career readiness.
+              </p>
+            </article>
+
+            <article class="hq-card-light">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.35rem;">REASON 04</div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">Relevant to a Fast-Changing AI World</h3>
+              <p style="font-size: 0.92rem;">
+                A sharp focus on critical thinking, core human skills, responsible technology use, and navigating uncertainty.
+              </p>
+            </article>
+
+            <article class="hq-card-light">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">REASON 05</div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">Customised for Institutional Needs</h3>
+              <p style="font-size: 0.92rem;">
+                Programmes tailored to your institution's objectives, student needs, available timetable slots, and preferred delivery format.
+              </p>
+            </article>
+
+            <article class="hq-card-light">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-spark); margin-bottom: 0.35rem;">REASON 06</div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">Direct NEP 2020 Action Engine</h3>
+              <p style="font-size: 0.92rem;">
+                Moves your campus beyond paper compliance to visibly execute NEP 2020’s mandate of replacing rote memorisation with holistic, competency-based education.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4.4: HOW PRINCIPALS, TEACHERS & PARENTS WIN TOGETHER -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--teal">
+              02 // MULTI-STAKEHOLDER ALIGNMENT
+            </div>
+            <h2 class="section-header">One Embedded Partnership. Three Transformative Wins.</h2>
+          </div>
+
+          <div class="table-scroll-wrap">
+            <table class="hq-table">
+              <thead>
+                <tr>
+                  <th>Stakeholder</th>
+                  <th>Their Daily Pain Point</th>
+                  <th>How HOLOGIQ Solves It</th>
+                  <th>Visible Campus Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. School Management &amp; Principal</strong></td>
+                  <td>Standing out to discerning parents, improving board exam results, NEP 2020 readiness</td>
+                  <td>Customised, age-adapted brain &amp; meta-skill integration alongside regular academics</td>
+                  <td><strong>Stronger institutional reputation, admissions growth &amp; confident students</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>2. Subject Teachers</strong></td>
+                  <td>Exhausted from repeating the same chapter 5 times to distracted, passive classrooms</td>
+                  <td>Rewires student attention, active observation, and "Learning How to Learn" loops</td>
+                  <td><strong>Students grasp regular syllabus lessons twice as fast with less teacher burnout</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>3. Parents &amp; Students</strong></td>
+                  <td>8-hour study stress, exam blank-outs, stage fear, screen addiction &amp; career confusion</td>
+                  <td>Builds task-engineering habits, 5-second emotional calm, and unscripted stage poise</td>
+                  <td><strong>Effortless exam recall, peaceful 8 PM study time &amp; self-sufficient life skills</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4.5: TWO SIGNATURE INSTITUTIONAL DIFFERENTIATORS (GRAPHIC 7: COGNITIVE PASSPORT & LIVE PARENT ARENA) -->
+      <section class="section-void section-pad">
+        <div class="hq-container">
+          <div class="section-header-block">
+            <div class="eyebrow-badge eyebrow-badge--dark">
+              SIGNATURE INSTITUTIONAL DIFFERENTIATORS
+            </div>
+            <h2 class="section-header" style="color: #FFFFFF;">
+              Measurable Scientific Proof &amp; Viral Open House Prestige
+            </h2>
+          </div>
+
+          <div class="differentiators-2grid">
+            <!-- Feature Card A: Graphic 7 — The "HOLOGIQ Cognitive Passport" Interactive Scorecard Preview -->
+            <div class="hq-card-dark">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.35rem;">
+                FEATURE CARD A // MEASURABLE PROOF FOR PARENTS
+              </div>
+              <h3 class="section-header" style="font-size: 1.4rem; color: #FFFFFF; margin-bottom: 0.5rem;">
+                Replace Vague "Soft-Skill Certificates" With a Scientific Growth Scorecard
+              </h3>
+              <p style="font-size: 0.92rem; color: #CBD5E1;">
+                Every semester, parents receive their child’s <strong>HOLOGIQ Cognitive Passport</strong>—visually tracking measurable growth across four dimensions: <em>Learning Velocity &amp; Recall Resilience, Unseen Problem Deconstruction, Emotional Reset Under Clock Pressure,</em> and <em>Unscripted Public Articulation</em>.
+              </p>
+
+              <!-- Graphic 7: Interactive Cognitive Passport UI Mockup -->
+              <div class="passport-mockup-card">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid #1E293B; margin-bottom: 0.9rem;">
+                  <div>
+                    <div class="telemetry-eyebrow" style="color: #5EEAD4;">HOLOGIQ COGNITIVE PASSPORT // SEM 02</div>
+                    <div id="passport-student-label" style="font-family: var(--hq-font-display); font-weight: 700; font-size: 0.95rem; color: #FFFFFF;">
+                      Student Cohort: Builder Lab (Grade 9 Assessment)
+                    </div>
+                  </div>
+                  <div style="display: flex; gap: 0.35rem;">
+                    <button type="button" class="quick-pill-btn passport-cohort-btn active" data-cohort="gr9">Gr 9 Sample</button>
+                    <button type="button" class="quick-pill-btn passport-cohort-btn" data-cohort="gr5">Gr 5 Sample</button>
+                    <button type="button" class="quick-pill-btn passport-cohort-btn" data-cohort="gr11">Gr 11 Sample</button>
+                  </div>
+                </div>
+
+                <!-- Inline SVG 4-Axis Radar + Telemetry Growth Bars -->
+                <svg viewBox="0 0 420 175" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="margin-bottom: 0.85rem; background: #0B1120; border: 1px solid #1E293B; border-radius: 8px;">
+                  <!-- 4-Axis Radar Diamond Grid on Left -->
+                  <circle cx="105" cy="88" r="62" fill="none" stroke="#1E293B" stroke-width="1" />
+                  <circle cx="105" cy="88" r="38" fill="none" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 3" />
+                  <line x1="105" y1="20" x2="105" y2="156" stroke="#1E293B" stroke-width="1" />
+                  <line x1="37" y1="88" x2="173" y2="88" stroke="#1E293B" stroke-width="1" />
+
+                  <!-- Before Baseline Polygon (Rose Alert) -->
+                  <polygon points="105,66 126,88 105,108 86,88" fill="rgba(225, 29, 72, 0.22)" stroke="#E11D48" stroke-width="1.5" stroke-dasharray="3 2" />
+                  <!-- After HOLOGIQ Polygon (Neuro-Teal) -->
+                  <polygon id="passport-radar-poly" points="105,30 163,88 105,146 50,88" fill="rgba(20, 184, 166, 0.25)" stroke="#14B8A6" stroke-width="2.2" />
+
+                  <!-- Axis Node Dots -->
+                  <circle cx="105" cy="30" r="3.5" fill="#5EEAD4" />
+                  <circle cx="163" cy="88" r="3.5" fill="#38BDF8" />
+                  <circle cx="105" cy="146" r="3.5" fill="#5EEAD4" />
+                  <circle cx="50" cy="88" r="3.5" fill="#FDBA74" />
+
+                  <!-- Legend & Summary on Right -->
+                  <rect x="192" y="22" width="216" height="58" rx="6" fill="#111827" stroke="#1E293B" />
+                  <line x1="204" y1="42" x2="224" y2="42" stroke="#E11D48" stroke-width="2" stroke-dasharray="3 2" />
+                  <text x="232" y="46" fill="#FDA4AF" font-family="JetBrains Mono, monospace" font-size="11">SEM 1 ROTE BASELINE</text>
+                  <line x1="204" y1="63" x2="224" y2="63" stroke="#14B8A6" stroke-width="2.5" />
+                  <text x="232" y="67" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">SEM 2 HOLOGIQ REWIRED</text>
+
+                  <rect x="192" y="92" width="216" height="62" rx="6" fill="rgba(13, 148, 136, 0.14)" stroke="#0D9488" />
+                  <text x="300" y="115" text-anchor="middle" fill="#CCFBF1" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">COMPOSITE COGNITIVE GAIN</text>
+                  <text id="passport-composite-val" x="300" y="140" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700">+73.8% VERIFIED</text>
+                </svg>
+
+                <!-- 4 Measurable Growth Bars -->
+                <div class="passport-metric-row">
+                  <div class="passport-metric-header">
+                    <span style="color: #E2E8F0;">01. Learning Velocity &amp; Recall Resilience</span>
+                    <span id="p-val-1" style="color: #5EEAD4; font-weight: 700;">+64%</span>
+                  </div>
+                  <div class="passport-bar-track">
+                    <div id="p-bar-1" class="passport-bar-fill" style="width: 88%;"></div>
+                  </div>
+                </div>
+
+                <div class="passport-metric-row">
+                  <div class="passport-metric-header">
+                    <span style="color: #E2E8F0;">02. Unseen Problem Deconstruction</span>
+                    <span id="p-val-2" style="color: #38BDF8; font-weight: 700;">+78%</span>
+                  </div>
+                  <div class="passport-bar-track">
+                    <div id="p-bar-2" class="passport-bar-fill" style="width: 92%;"></div>
+                  </div>
+                </div>
+
+                <div class="passport-metric-row">
+                  <div class="passport-metric-header">
+                    <span style="color: #E2E8F0;">03. Emotional Reset Under Clock Pressure</span>
+                    <span id="p-val-3" style="color: #5EEAD4; font-weight: 700;">+82%</span>
+                  </div>
+                  <div class="passport-bar-track">
+                    <div id="p-bar-3" class="passport-bar-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+
+                <div class="passport-metric-row" style="margin-bottom: 0;">
+                  <div class="passport-metric-header">
+                    <span style="color: #E2E8F0;">04. Unscripted 3-Point Articulation</span>
+                    <span id="p-val-4" style="color: #FDBA74; font-weight: 700;">+71%</span>
+                  </div>
+                  <div class="passport-bar-track">
+                    <div id="p-bar-4" class="passport-bar-fill" style="width: 90%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature Card B: The "Live Parent Arena" (Your Admissions Open House Magnet) -->
+            <div class="hq-card-dark" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div class="telemetry-eyebrow" style="color: #FDBA74; margin-bottom: 0.35rem;">
+                  FEATURE CARD B // YOUR ADMISSIONS OPEN HOUSE MAGNET
+                </div>
+                <h3 class="section-header" style="font-size: 1.4rem; color: #FFFFFF; margin-bottom: 0.5rem;">
+                  Turn Your Next PTM Into a Viral Campus Spectacle
+                </h3>
+                <p style="font-size: 0.92rem; color: #CBD5E1; margin-bottom: 1.15rem;">
+                  Paper report cards don't get shared on WhatsApp—extraordinary live moments do. Each semester, HOLOGIQ hosts a <strong>Live Parent Arena</strong> in your auditorium where visiting parents throw unseen real-world dilemmas at teams of your students on stage and record them collaborating, thinking on their feet, and defending solutions on the microphone with zero memorised scripts.
+                </p>
+              </div>
+
+              <!-- Architectural Stage Simulation Blueprint SVG -->
+              <div style="background: #090D16; border: 1px solid #1E293B; border-radius: 12px; padding: 1.15rem;">
+                <div class="telemetry-eyebrow" style="color: var(--hq-brand-sky); margin-bottom: 0.55rem;">
+                  AUDITORIUM BLUEPRINT // THE LIVE PARENT ARENA PTM SPECTACLE
+                </div>
+                <svg viewBox="0 0 460 235" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Live Parent Arena Auditorium Stage Blueprint">
+                  <!-- Auditorium Stage Box -->
+                  <rect x="16" y="12" width="428" height="90" rx="8" fill="rgba(29, 78, 216, 0.16)" stroke="#38BDF8" stroke-width="1.8" />
+                  <text x="230" y="34" text-anchor="middle" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">AUDITORIUM STAGE // ZERO TELEPROMPTERS OR SCRIPTS</text>
+
+                  <!-- 3 Student Squad Nodes on Stage -->
+                  <rect x="30" y="45" width="124" height="46" rx="6" fill="#111827" stroke="#0D9488" />
+                  <text x="92" y="64" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">SQUAD ALPHA</text>
+                  <text x="92" y="81" text-anchor="middle" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11">Deconstructs</text>
+
+                  <rect x="168" y="45" width="124" height="46" rx="6" fill="#111827" stroke="#EA580C" />
+                  <text x="230" y="64" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">LIVE MIC</text>
+                  <text x="230" y="81" text-anchor="middle" fill="#FDBA74" font-family="JetBrains Mono, monospace" font-size="11">3-Pt Defense</text>
+
+                  <rect x="306" y="45" width="124" height="46" rx="6" fill="#111827" stroke="#38BDF8" />
+                  <text x="368" y="64" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">SQUAD BETA</text>
+                  <text x="368" y="81" text-anchor="middle" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11">Live Pivot</text>
+
+                  <!-- Bidirectional Live Challenge Vectors -->
+                  <path class="svg-dash-flow" d="M 140 144 L 195 102" stroke="#EA580C" stroke-width="2.2" />
+                  <path class="svg-dash-flow" d="M 320 144 L 265 102" stroke="#14B8A6" stroke-width="2.2" />
+
+                  <!-- Visiting Parents Audience Zone -->
+                  <rect x="16" y="144" width="428" height="78" rx="8" fill="#111827" stroke="#1E293B" />
+                  <text x="230" y="166" text-anchor="middle" fill="#FDBA74" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">VISITING PARENTS &amp; PROSPECTIVE ADMISSIONS FAMILIES</text>
+                  <text x="230" y="186" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Parents throw live curveball dilemmas &amp; film their children</text>
+                  <text x="230" y="206" text-anchor="middle" fill="#5EEAD4" font-family="JetBrains Mono, monospace" font-size="11">100% ORGANIC WHATSAPP WORD-OF-MOUTH FOR YOUR SCHOOL</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4.6: SCHOOL LEADERSHIP FAQ (EXPANDABLE ACCORDION) -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container">
+          <div class="section-header-block centered">
+            <div class="eyebrow-badge eyebrow-badge--light">
+              INSTITUTIONAL DUEDILIGENCE // SCHOOL LEADERSHIP FAQ
+            </div>
+            <h2 class="section-header">Frequently Asked Questions from Principals &amp; Trustees</h2>
+          </div>
+
+          <div class="faq-stack">
+            <!-- FAQ 1 -->
+            <div class="faq-item open">
+              <button type="button" class="faq-trigger" aria-expanded="true">
+                <span>Q1: Will dedicating 1 period a week to HOLOGIQ reduce time for syllabus completion?</span>
+                <svg class="faq-icon-svg" viewBox="0 0 24 24" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </button>
+              <div class="faq-content" style="max-height: 260px;">
+                <div class="faq-content-inner">
+                  Quite the opposite. Subject teachers currently lose up to 40% of their class time re-explaining topics because students lack focus and structured recall. Upgrading how students absorb and encode lessons in one HOLOGIQ period per week saves your teachers hours of repetitive revision before exams.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>Q2: How is HOLOGIQ different from Abacus, Vedic Math, or memory-trick classes?</span>
+                <svg class="faq-icon-svg" viewBox="0 0 24 24" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <div class="faq-content-inner">
+                  Memory-trick vendors still train students to act like human calculators or static hard drives—skills that smartphones and AI have made obsolete. HOLOGIQ does not teach calculation tricks; we engineer <strong>metacognition ("learning how to learn")</strong>, emotional self-correction under stress, critical bias detection, and unscripted communication.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>Q3: Does this require extra preparation or grading from our school teachers?</span>
+                <svg class="faq-icon-svg" viewBox="0 0 24 24" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <div class="faq-content-inner">
+                  Zero extra burden falls on your faculty. HOLOGIQ provides trained facilitators and structured simulation protocols—while giving your teachers calmer, more attentive classrooms every day.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /#view-schools -->
+
+    <!-- ======================================================================
+         VIEW 5: BOOK THE 12-MINUTE LIVE EXPERIMENT (CONVERSION PAGE) (#book-experiment)
+         ====================================================================== -->
+    <div id="view-book-experiment" class="app-view" role="region" aria-label="Book 12-Minute Live Experiment View">
+
+      <!-- SECTION 5.1: PAGE HERO -->
+      <section class="section-void section-pad">
+        <div class="hq-container">
+          <div class="eyebrow-badge eyebrow-badge--rose">
+            <span class="live-dot live-dot--amber"></span>
+            <span>ZERO COST • ZERO COMMITMENT • PURE LIVE CLASSROOM PROOF</span>
+          </div>
+          <h1 class="page-title" style="color: #FFFFFF; max-width: 900px; margin-bottom: 1rem;">
+            Don’t Buy a Brochure. Challenge Us With 8 of Your Average Students for 12 Minutes.
+          </h1>
+          <p class="lead-copy" style="color: #CBD5E1; max-width: 860px;">
+            Please don’t send us your school toppers. Pick any section of Grades 4 to 12, hand us 8 to 10 of your quietest, middle-of-the-pack students during a free period, and sit at the back of the room. If you don’t witness a visible, goosebump-inducing shift in how they think, handle pressure, and speak within 12 minutes, we will shake hands and walk away cleanly.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 5.2 & 5.3: INTERACTIVE 4-CARD EXPERIMENT SELECTOR + FRICTIONLESS BOOKING FORM -->
+      <section class="section-canvas section-pad">
+        <div class="hq-container booking-layout-grid">
+
+          <!-- Left Column: Interactive 4-Experiment Selector Cards + Live Minute-by-Minute Timeline -->
+          <div>
+            <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.35rem;">
+              STEP 01 // SELECT YOUR LIVE CLASSROOM PROTOCOL
+            </div>
+            <h2 class="section-header" style="margin-bottom: 1rem;">
+              Choose Which 12-Minute Experiment You Want to Witness
+            </h2>
+
+            <div class="experiment-cards-grid" role="radiogroup" aria-label="Choose a 12-Minute Classroom Experiment">
+
+              <!-- Card 01 -->
+              <div class="exp-selector-card selected" tabindex="0" role="radio" aria-checked="true" data-exp-id="exp-01" data-exp-grade="Grades 7–9">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.5rem;">
+                  <div>
+                    <span class="telemetry-eyebrow" style="color: var(--hq-brand-spark); background: #FFF7ED; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #FED7AA;">
+                      CARD 01 • MOST REQUESTED • GRADES 7–10
+                    </span>
+                    <h3 class="module-header" style="margin-top: 0.45rem;">
+                      The "Out-of-Syllabus" Black-Box Protocol
+                    </h3>
+                  </div>
+                  <span class="exp-radio-indicator" aria-hidden="true"></span>
+                </div>
+                <p style="font-size: 0.86rem; color: var(--hq-state-rote-alert); font-weight: 600; margin-bottom: 0.4rem;">
+                  Target Pain Point: Students freezing whenever CBSE/ICSE exam questions are twisted outside the textbook.
+                </p>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  <strong>What You Will Witness in 12 Mins:</strong> First, see why 95% of students (and adults!) get trapped copying textbook surface patterns when a rule changes. Then watch those same 8 students install our <em>Boundary-Testing Feedback Loop</em> and decode a mutating, unseen system like real researchers in under 4 minutes.
+                </p>
+              </div>
+
+              <!-- Card 02 -->
+              <div class="exp-selector-card" tabindex="0" role="radio" aria-checked="false" data-exp-id="exp-02" data-exp-grade="Grades 4–6">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.5rem;">
+                  <div>
+                    <span class="telemetry-eyebrow" style="color: var(--hq-brand-teal); background: #F0FDFA; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #99F6E4;">
+                      CARD 02 • GRADES 4–6
+                    </span>
+                    <h3 class="module-header" style="margin-top: 0.45rem;">
+                      The "Rigged Judge" Emotional Reset Protocol
+                    </h3>
+                  </div>
+                  <span class="exp-radio-indicator" aria-hidden="true"></span>
+                </div>
+                <p style="font-size: 0.86rem; color: var(--hq-state-rote-alert); font-weight: 600; margin-bottom: 0.4rem;">
+                  Target Pain Point: Younger students panicking, crying, or shutting down after one tough exam question or mistake.
+                </p>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  <strong>What You Will Witness in 12 Mins:</strong> Watch how students initially freeze when hit with unfair surprise rule changes under a ticking clock—and how installing our <em>3-Second Physical-Mental Reset Switch</em> trains them to recover instantly and solve under chaos.
+                </p>
+              </div>
+
+              <!-- Card 03 -->
+              <div class="exp-selector-card" tabindex="0" role="radio" aria-checked="false" data-exp-id="exp-03" data-exp-grade="Grades 7–9">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.5rem;">
+                  <div>
+                    <span class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); background: #EFF6FF; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #BFDBFE;">
+                      CARD 03 • GRADES 7–9
+                    </span>
+                    <h3 class="module-header" style="margin-top: 0.45rem;">
+                      The "Broken Teleprompter" Unscripted Speaking Test
+                    </h3>
+                  </div>
+                  <span class="exp-radio-indicator" aria-hidden="true"></span>
+                </div>
+                <p style="font-size: 0.86rem; color: var(--hq-state-rote-alert); font-weight: 600; margin-bottom: 0.4rem;">
+                  Target Pain Point: Students who can recite memorised speeches but go completely mute when interrupted in a viva or debate.
+                </p>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  <strong>What You Will Witness in 12 Mins:</strong> Watch a shy student move from freezing when a memorised script is wiped off the board to speaking fluently for 60 seconds while <strong>you personally shout random curveball words</strong> from the back of the room.
+                </p>
+              </div>
+
+              <!-- Card 04 -->
+              <div class="exp-selector-card" tabindex="0" role="radio" aria-checked="false" data-exp-id="exp-04" data-exp-grade="Grades 10–12">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.5rem;">
+                  <div>
+                    <span class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); background: #EFF6FF; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #BFDBFE;">
+                      CARD 04 • GRADES 10–12 &amp; COLLEGE
+                    </span>
+                    <h3 class="module-header" style="margin-top: 0.45rem;">
+                      The "Invisible Graveyard" Critical Bias Audit
+                    </h3>
+                  </div>
+                  <span class="exp-radio-indicator" aria-hidden="true"></span>
+                </div>
+                <p style="font-size: 0.86rem; color: var(--hq-state-rote-alert); font-weight: 600; margin-bottom: 0.4rem;">
+                  Target Pain Point: Senior students falling for misleading career hype, surface-level statistics, and AI hallucinations.
+                </p>
+                <p style="font-size: 0.9rem; color: var(--hq-text-body);">
+                  <strong>What You Will Witness in 12 Mins:</strong> A famous World War II engineering decision trap that fools almost every senior student in the first 2 minutes—followed by our <em>Ghost Data Audit</em> that trains them to spot hidden flaws in data and claims on the spot.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Interactive Minute-by-Minute Principal Witness Preview Timeline -->
+            <div class="minute-timeline-box" aria-live="polite">
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem;">
+                <span class="telemetry-eyebrow" style="color: var(--hq-brand-sky);">
+                  WHAT THE PRINCIPAL WILL WITNESS MINUTE-BY-MINUTE (720 SECONDS)
+                </span>
+                <span id="timeline-exp-badge" class="telemetry-eyebrow" style="color: #5EEAD4;">
+                  PROTOCOL: OUT-OF-SYLLABUS BLACK-BOX
+                </span>
+              </div>
+              <div class="timeline-steps" id="timeline-steps-container">
+                <div class="timeline-step-item" style="border-left-color: #E11D48;">
+                  <div class="telemetry-eyebrow" style="color: #FDA4AF;">MIN 00:00 – 03:00 // EXPOSING THE ROTE REFLEX</div>
+                  <p style="font-size: 0.85rem; color: #E2E8F0; margin-top: 0.25rem;">
+                    8 average students test the 3 &rarr; 6 &rarr; 9 lock and get trapped inside "Multiples of 3" because they only test PASS patterns.
+                  </p>
+                </div>
+                <div class="timeline-step-item" style="border-left-color: #38BDF8;">
+                  <div class="telemetry-eyebrow" style="color: #38BDF8;">MIN 03:00 – 07:00 // INSTALLING BOUNDARY TESTING (✗)</div>
+                  <p style="font-size: 0.85rem; color: #E2E8F0; margin-top: 0.25rem;">
+                    Facilitator installs the 4-Step Loop (Observe &rarr; Engineer &rarr; Test FAIL &rarr; Self-Fix) with zero textbook theory.
+                  </p>
+                </div>
+                <div class="timeline-step-item" style="border-left-color: #EA580C;">
+                  <div class="telemetry-eyebrow" style="color: #FDBA74;">MIN 07:00 – 10:00 // LIVE RULE MUTATION CHALLENGE</div>
+                  <p style="font-size: 0.85rem; color: #E2E8F0; margin-top: 0.25rem;">
+                    The system rule mutates silently under a 180-second clock; students collaborate and hunt for disconfirming evidence.
+                  </p>
+                </div>
+                <div class="timeline-step-item" style="border-left-color: #14B8A6;">
+                  <div class="telemetry-eyebrow" style="color: #5EEAD4;">MIN 10:00 – 12:00 // UNSCRIPTED PRINCIPAL DEFENSE</div>
+                  <p style="font-size: 0.85rem; color: #E2E8F0; margin-top: 0.25rem;">
+                    Your quietest student stands up and explains the exact hidden rule to you using the 3-Finger Articulation Reflex.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Section 5.3 — The Frictionless Campus Booking Form -->
+          <div class="booking-form-card" id="campus-booking-form-card">
+            <div class="telemetry-eyebrow" style="color: var(--hq-brand-cobalt); margin-bottom: 0.3rem;">
+              STEP 02 // 30-SECOND CAMPUS DISPATCH
+            </div>
+            <h2 class="section-header" style="font-size: 1.45rem; margin-bottom: 0.35rem;">
+              Lock In Your Free 12-Minute Classroom Experiment
+            </h2>
+            <p style="font-size: 0.88rem; color: var(--hq-text-muted); margin-bottom: 1.25rem;">
+              Takes 30 seconds. Zero projector setup needed—just a whiteboard and 8 average students.
+            </p>
+
+            <form id="experiment-booking-form" novalidate>
+              <!-- Input Field 1 -->
+              <div class="form-group">
+                <label class="form-label" for="book-name">
+                  1. Your Full Name &amp; Designation <span style="color: var(--hq-state-rote-alert);">*</span>
+                </label>
+                <input type="text" id="book-name" class="form-input" placeholder="e.g., Dr. S. Radhakrishnan — Principal / Trustee" required />
+                <div class="field-error-msg" id="err-book-name">Please enter your full name and designation.</div>
+              </div>
+
+              <!-- Input Field 2 -->
+              <div class="form-group">
+                <label class="form-label" for="book-school">
+                  2. School or Institution Name &amp; City <span style="color: var(--hq-state-rote-alert);">*</span>
+                </label>
+                <input type="text" id="book-school" class="form-input" placeholder="e.g., National Public School, Bengaluru" required />
+                <div class="field-error-msg" id="err-book-school">Please enter your school/institution name and city.</div>
+              </div>
+
+              <!-- Input Field 3 -->
+              <div class="form-group">
+                <label class="form-label" for="book-phone">
+                  3. Direct WhatsApp / Mobile Number <span style="color: var(--hq-state-rote-alert);">*</span>
+                </label>
+                <input type="tel" id="book-phone" class="form-input tabular-nums" placeholder="e.g., +91 98765 43210" required />
+                <div class="field-error-msg" id="err-book-phone">Please enter a valid 10-digit mobile/WhatsApp number.</div>
+              </div>
+
+              <!-- Input Field 4 (Dropdown auto-synced with Cards 01–04) -->
+              <div class="form-group">
+                <label class="form-label" for="book-experiment-select">
+                  4. Which 12-Minute Experiment Would You Like to Witness? <span style="color: var(--hq-state-rote-alert);">*</span>
+                </label>
+                <select id="book-experiment-select" class="form-select" required>
+                  <option value="exp-01">01. The "Out-of-Syllabus" Black-Box Protocol (Grades 7–10)</option>
+                  <option value="exp-02">02. The "Rigged Judge" Emotional Reset Protocol (Grades 4–6)</option>
+                  <option value="exp-03">03. The "Broken Teleprompter" Unscripted Speaking Test (Grades 7–9)</option>
+                  <option value="exp-04">04. The "Invisible Graveyard" Critical Bias Audit (Grades 10–12 &amp; College)</option>
+                  <option value="recommend">Let HOLOGIQ Recommend Based on Our Campus Goals</option>
+                </select>
+              </div>
+
+              <!-- Input Field 5 (Preferred Grade Group Pills) -->
+              <div class="form-group">
+                <span class="form-label">
+                  5. Preferred Grade Group <span style="color: var(--hq-state-rote-alert);">*</span>
+                </span>
+                <input type="hidden" id="book-grade-input" value="Grades 7–9" />
+                <div class="grade-pills-grid" role="group" aria-label="Preferred Grade Group">
+                  <button type="button" class="grade-pill-btn" data-grade="Grades 4–6">Grades 4–6</button>
+                  <button type="button" class="grade-pill-btn active" data-grade="Grades 7–9">Grades 7–9</button>
+                  <button type="button" class="grade-pill-btn" data-grade="Grades 10–12">Grades 10–12</button>
+                  <button type="button" class="grade-pill-btn" data-grade="College">College</button>
+                </div>
+              </div>
+
+              <!-- Primary Submit Button -->
+              <button type="submit" class="btn btn-spark" style="width: 100%; margin-top: 0.35rem;">
+                Lock In My Free 12-Minute School Demo &rarr;
+              </button>
+
+              <!-- 1-Click Direct WhatsApp Fallback Button -->
+              <button type="button" id="whatsapp-direct-btn" class="btn btn-outline-light" style="width: 100%; margin-top: 0.65rem; font-size: 0.86rem;">
+                💬 Or Send Booking Directly via WhatsApp &rarr;
+              </button>
+
+              <!-- Privacy Footnote -->
+              <p style="font-size: 0.76rem; color: var(--hq-text-muted); margin-top: 0.85rem; line-height: 1.45;">
+                100% confidential. No spam calls—our founding academic leadership team will message you directly on WhatsApp to coordinate a convenient 15-minute free period.
+              </p>
+            </form>
+
+            <!-- Instant Interactive Confirmation State -->
+            <div class="booking-success-panel" id="booking-confirmation-box" aria-live="polite">
+              <div class="telemetry-eyebrow" style="color: var(--hq-brand-teal); margin-bottom: 0.35rem;">
+                ✓ EXPERIMENT SLOT REQUEST CONFIRMED
+              </div>
+              <h3 class="module-header" style="margin-bottom: 0.45rem;">
+                Your 12-Minute Live Classroom Challenge Is Logged!
+              </h3>
+              <p id="booking-summary-text" style="font-size: 0.9rem; margin-bottom: 0.9rem;">
+                Thank you. Our Academic Founding Team will message your WhatsApp shortly to confirm your preferred 15-minute free period.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.55rem;">
+                <a href="#" id="whatsapp-confirm-link" target="_blank" rel="noopener noreferrer" class="btn btn-teal" style="width: 100%;">
+                  Send Instant Confirmation on WhatsApp &rarr;
+                </a>
+                <button type="button" id="reset-booking-btn" class="btn btn-outline-light" style="width: 100%; min-height: 42px; font-size: 0.82rem;">
+                  Modify Booking Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- /#view-book-experiment -->
+
+  </main>
+
+  <!-- ========================================================================
+       PART 2.2: GLOBAL EXECUTIVE FOOTER (PERSISTENT ACROSS ALL PAGES)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="hq-container">
+
+      <!-- Footer Top Conversion Banner -->
+      <div class="footer-top-cta">
+        <div class="eyebrow-badge eyebrow-badge--dark">
+          BEYOND CLASSROOMS • BEYOND TEXTBOOKS • BEYOND LIMITS
+        </div>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem;">
+          <div style="max-width: 720px;">
+            <h2 class="section-header" style="color: #FFFFFF; margin-bottom: 0.5rem;">
+              Don’t Just Prepare Students for Exams. Prepare Them for Life.
+            </h2>
+            <p style="color: #CBD5E1; font-size: 0.98rem;">
+              Partner with HOLOGIQ to embed "Learning How to Learn" Brain Engineering and essential human skills into your campus.
+            </p>
+          </div>
+          <a href="#book-experiment" class="btn btn-spark" data-nav-target="book-experiment">
+            Challenge Us With 8 Students (Free 12-Min Test) &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- 4-Column Executive Footer Grid -->
+      <div class="footer-4grid">
+        <!-- Column 1: Brand Bio -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.85rem;">
+            <svg class="footer-logo-svg" viewBox="0 0 48 48" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <polygon points="24,3 42.2,13.5 42.2,34.5 24,45 5.8,34.5 5.8,13.5" fill="none" stroke="#38BDF8" stroke-width="2.5" />
+              <polygon points="24,9 38,24 24,39 10,24" fill="rgba(13, 148, 136, 0.15)" stroke="#0D9488" stroke-width="2" />
+              <circle cx="24" cy="24" r="4.5" fill="#EA580C" />
+            </svg>
+            <span class="brand-wordmark">HOLOGIQ</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--hq-text-on-dark-muted); line-height: 1.6;">
+            HOLOGIQ partners with forward-thinking schools and colleges across India to upgrade how students learn, think, regulate emotions, speak, and adapt—working seamlessly as an embedded model inside the regular academic timetable.
+          </p>
+        </div>
+
+        <!-- Column 2: Architecture -->
+        <div>
+          <div class="footer-col-title">Architecture</div>
+          <ul class="footer-links-list">
+            <li><a href="#home" data-nav-target="home">Home</a></li>
+            <li><a href="#science" data-nav-target="science">The Science of Learning How to Learn</a></li>
+            <li><a href="#programmes" data-nav-target="programmes">6 Core Programmes</a></li>
+            <li><a href="#programmes" data-nav-target="programmes">AI &amp; Financial Literacy Labs</a></li>
+            <li><a href="#schools" data-nav-target="schools">Embedded School Model</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: The 4 Live Experiments -->
+        <div>
+          <div class="footer-col-title">The 4 Live Experiments</div>
+          <ul class="footer-links-list">
+            <li><a href="#book-experiment" data-nav-target="book-experiment" data-select-exp="exp-01">01. Out-of-Syllabus Black-Box (Gr 7–10)</a></li>
+            <li><a href="#book-experiment" data-nav-target="book-experiment" data-select-exp="exp-02">02. Rigged Judge Reset (Gr 4–6)</a></li>
+            <li><a href="#book-experiment" data-nav-target="book-experiment" data-select-exp="exp-03">03. Broken Teleprompter (Gr 7–9)</a></li>
+            <li><a href="#book-experiment" data-nav-target="book-experiment" data-select-exp="exp-04">04. Invisible Graveyard Audit (Gr 10–12)</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Institutional Contact -->
+        <div>
+          <div class="footer-col-title">Institutional Contact</div>
+          <ul class="footer-links-list">
+            <li><a href="mailto:partnerships@hologiq.in">partnerships@hologiq.in</a></li>
+            <li><a href="#home" data-nav-target="home">www.hologiq.in</a></li>
+            <li><span style="color: var(--hq-text-on-dark-muted); font-size: 0.9rem;">Campus Demo Desk (India)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright Line -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 HOLOGIQ Education. Educate the Mind. Empower the Individual. Prepare for the Future.</span>
+        <span class="telemetry-eyebrow" style="color: #64748B;">BRAIN ENGINEERING • AGES 8–19 • NEP 2020 ALIGNED</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bottom Action Bar (<768px, auto-hides on #book-experiment) -->
+  <div class="mobile-sticky-cta-bar" id="mobile-sticky-bar">
+    <div>
+      <div class="telemetry-eyebrow" style="color: #5EEAD4; font-size: 0.62rem;">FREE 12-MIN CAMPUS PROOF</div>
+      <div style="font-family: var(--hq-font-display); font-weight: 700; font-size: 0.85rem; color: #FFFFFF;">
+        Challenge Us With 8 Students
+      </div>
+    </div>
+    <a href="#book-experiment" class="btn btn-spark" data-nav-target="book-experiment" style="min-height: 42px; padding: 0.5rem 0.9rem; font-size: 0.82rem;">
+      Book 12-Min School Test &rarr;
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
